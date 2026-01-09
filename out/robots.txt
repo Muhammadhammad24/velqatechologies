@@ -1,0 +1,23 @@
+User-Agent: *
+Allow: /
+Disallow: /api/
+Disallow: /admin/
+Disallow: /_next/
+Disallow: /private/
+Disallow: *.json
+Disallow: /search
+
+User-Agent: Googlebot
+Allow: /
+Disallow: /api/
+Disallow: /admin/
+Disallow: /private/
+
+User-Agent: Bingbot
+Allow: /
+Disallow: /api/
+Disallow: /admin/
+Disallow: /private/
+
+Host: https://velqatechnologies.com
+Sitemap: https://velqatechnologies.com/sitemap.xml
