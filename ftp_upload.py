@@ -1,10 +1,10 @@
 from ftplib import FTP
 import os
 
-# NEW FTP Configuration
+# FTP Configuration
 FTP_HOST = "141.136.39.103"
-FTP_USER = "Wasaywaseem6"
-FTP_PASS = "12905@4560=+sS"
+FTP_USER = "u270993739.velqatechologies.com"
+FTP_PASS = "R;?xfQ!AaQhx5#Uv"
 FTP_PORT = 21
 
 LOCAL_DIR = r"D:\Personal projects\website-development-plan\out"
