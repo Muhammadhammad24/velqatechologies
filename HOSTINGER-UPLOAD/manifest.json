@@ -1,0 +1,75 @@
+{
+  "name": "Velqa Technologies LLC - Enterprise BPO Solutions",
+  "short_name": "Velqa Technologies",
+  "description": "Award-winning BPO services trusted by Fortune 500 companies. 24/7 enterprise customer support with 99.8% satisfaction rate.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1e40af",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "en-US",
+  "dir": "ltr",
+  "categories": ["business", "productivity", "utilities"],
+  "icons": [
+    {
+      "src": "/icon-light-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-dark-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/apple-icon.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/professional-call-center-floor-with-agents-working.jpg",
+      "sizes": "1200x630",
+      "type": "image/jpeg",
+      "platform": "wide",
+      "label": "Velqa Technologies - Professional BPO Operations"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Contact Us",
+      "short_name": "Contact",
+      "description": "Get in touch with our team",
+      "url": "/contact",
+      "icons": [
+        {
+          "src": "/icon-light-32x32.png",
+          "sizes": "32x32"
+        }
+      ]
+    },
+    {
+      "name": "Our Services",
+      "short_name": "Services",
+      "description": "Explore our BPO services",
+      "url": "/services",
+      "icons": [
+        {
+          "src": "/icon-light-32x32.png",
+          "sizes": "32x32"
+        }
+      ]
+    }
+  ]
+}

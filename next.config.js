@@ -2,14 +2,14 @@
 const nextConfig = {
   output: 'export',
   trailingSlash: true,
+  distDir: 'out',
   images: {
     unoptimized: true,
   },
-  experimental: {
-    turbo: {
-      root: __dirname,
-    },
-  },
+  assetPrefix: '',
+  basePath: '',
+  // Disable experimental features for better compatibility
+  experimental: {},
 }
 
 module.exports = nextConfig

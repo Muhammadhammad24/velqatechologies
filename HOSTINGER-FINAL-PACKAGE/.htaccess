@@ -1,0 +1,80 @@
+Options -Indexes
+DirectoryIndex index.html
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+
+# Force HTTPS (optional - uncomment if you have SSL)
+# RewriteCond %{HTTPS} off
+# RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Handle _next static files
+RewriteRule ^_next/(.*)$ _next/$1 [L]
+
+# Handle static files directly
+RewriteCond %{REQUEST_FILENAME} -f
+RewriteRule ^ - [L]
+
+# Handle directories with index.html
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteCond %{REQUEST_FILENAME}/index.html -f
+RewriteRule ^(.*)$ $1/index.html [L]
+
+# Add trailing slash to directories
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteCond %{REQUEST_URI} !(.*)/$
+RewriteRule ^(.*)$ $1/ [L,R=301]
+
+# Serve index.html for directories
+RewriteCond %{REQUEST_URI} /$
+RewriteCond %{REQUEST_FILENAME}index.html -f
+RewriteRule ^(.*)$ ${REQUEST_FILENAME}index.html [L]
+
+# Fallback to root index.html for client-side routing
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.html [L]
+
+</IfModule>
+
+# Error pages
+ErrorDocument 404 /404.html
+
+# MIME types
+<IfModule mod_mime.c>
+AddType text/css .css
+AddType application/javascript .js
+AddType application/json .json
+AddType image/svg+xml .svg
+AddType image/webp .webp
+</IfModule>
+
+# Compression
+<IfModule mod_deflate.c>
+AddOutputFilterByType DEFLATE text/html
+AddOutputFilterByType DEFLATE text/css
+AddOutputFilterByType DEFLATE text/javascript
+AddOutputFilterByType DEFLATE application/javascript
+AddOutputFilterByType DEFLATE application/json
+AddOutputFilterByType DEFLATE image/svg+xml
+</IfModule>
+
+# Cache control
+<IfModule mod_expires.c>
+ExpiresActive On
+ExpiresByType text/css "access plus 1 year"
+ExpiresByType application/javascript "access plus 1 year"
+ExpiresByType image/jpeg "access plus 1 year"
+ExpiresByType image/png "access plus 1 year"
+ExpiresByType image/svg+xml "access plus 1 year"
+ExpiresByType image/webp "access plus 1 year"
+</IfModule>
+
+# Security headers
+<IfModule mod_headers.c>
+Header always set X-Content-Type-Options "nosniff"
+Header always set X-Frame-Options "SAMEORIGIN"
+Header always set X-XSS-Protection "1; mode=block"
+</IfModule>
