@@ -1,5 +1,5 @@
 build:
   install: npm ci
   command: npm run build
-  output: out
+  publish: out
   node_version: 18
