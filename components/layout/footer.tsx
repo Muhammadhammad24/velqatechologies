@@ -11,11 +11,11 @@ const services = [
 ]
 
 const company = [
-  { name: "About Us", href: "/about" },
-  { name: "Industries", href: "/industries" },
-  { name: "Velqa Publishers", href: "/velqa-publishers" },
-  { name: "Careers", href: "/careers" },
-  { name: "Contact", href: "/contact" },
+  { name: "About Us", href: "/about", external: false },
+  { name: "Industries", href: "/industries", external: false },
+  { name: "Velqa Publishers", href: "https://velqapublishers.com/index.html", external: true },
+  { name: "Careers", href: "/careers", external: false },
+  { name: "Contact", href: "/contact", external: false },
 ]
 
 const legal = [
@@ -89,12 +89,23 @@ export function Footer() {
             <ul className="space-y-3">
               {company.map((item) => (
                 <li key={item.href}>
-                  <Link
-                    href={item.href}
-                    className="text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors"
-                  >
-                    {item.name}
-                  </Link>
+                  {item.external ? (
+                    <a
+                      href={item.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors"
+                    >
+                      {item.name}
+                    </a>
+                  ) : (
+                    <Link
+                      href={item.href}
+                      className="text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors"
+                    >
+                      {item.name}
+                    </Link>
+                  )}
                 </li>
               ))}
             </ul>

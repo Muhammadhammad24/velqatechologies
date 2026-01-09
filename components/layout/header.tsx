@@ -157,13 +157,14 @@ export function Header() {
             </DropdownMenu>
 
             {[
-              { href: "/velqa-publishers", label: "VELQA PUBLISHERS" },
-              { href: "/careers", label: "CAREERS" },
-              { href: "/contact", label: "CONTACT" },
+              { href: "https://velqapublishers.com/index.html", label: "VELQA PUBLISHERS", external: true },
+              { href: "/careers", label: "CAREERS", external: false },
+              { href: "/contact", label: "CONTACT", external: false },
             ].map((link) => (
-              <Link
+              <a
                 key={link.href}
                 href={link.href}
+                {...(link.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
                 className="relative text-sm font-bold text-foreground/80 hover:text-foreground transition-colors group uppercase tracking-wide"
               >
                 {link.label}
@@ -277,14 +278,16 @@ export function Header() {
               </div>
             </div>
 
-            <Link
-              href="/velqa-publishers"
+            <a
+              href="https://velqapublishers.com/index.html"
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-sm font-bold text-foreground/80 hover:text-foreground animate-slide-up uppercase tracking-wide"
               onClick={() => setMobileMenuOpen(false)}
               style={{ animationDelay: "0.25s" }}
             >
               VELQA PUBLISHERS
-            </Link>
+            </a>
             <Link
               href="/careers"
               className="text-sm font-bold text-foreground/80 hover:text-foreground animate-slide-up uppercase tracking-wide"
