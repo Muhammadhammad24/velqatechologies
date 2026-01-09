@@ -1,0 +1,9 @@
+======================================== 
+   HOSTINGER UPLOAD INSTRUCTIONS 
+======================================== 
+ 
+1. Go to Hostinger File Manager 
+2. Open public_html folder 
+3. DELETE ALL existing files 
+4. Upload ALL files from this folder 
+5. Your website will be live! 
