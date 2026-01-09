@@ -58,8 +58,7 @@
     "embla-carousel-react": "8.5.1",
     "recharts": "2.13.3",
     "input-otp": "1.4.1",
-    "cmdk": "1.0.4",
-    "react-resizable-panels": "2.1.7"
+    "cmdk": "1.0.4"
   },
   "devDependencies": {
     "@types/node": "20.17.9",
