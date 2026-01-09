@@ -1,0 +1,91 @@
+import { MapPin, Clock, Users, Wifi } from "lucide-react"
+
+const locations = [
+  {
+    country: "United States",
+    role: "Headquarters",
+    address: "123 Business Avenue, Suite 100\nNew York, NY 10001",
+    features: ["Executive Leadership", "Enterprise Sales", "Strategic Partnerships"],
+    image: "/new-york-city-skyline-modern-business-district-sun.jpg",
+  },
+  {
+    country: "Pakistan",
+    role: "Operations Center",
+    address: "Business District, Tower A\nLahore, Pakistan",
+    features: ["24/7 Operations", "Technical Support", "Customer Service"],
+    image: "/lahore-pakistan-modern-business-district-skyline.jpg",
+  },
+]
+
+export function GlobalPresence() {
+  return (
+    <section className="py-20 bg-primary text-primary-foreground">
+      <div className="container mx-auto px-4">
+        <div className="text-center max-w-3xl mx-auto mb-16">
+          <span className="text-sm font-semibold text-secondary uppercase tracking-wider">Global Presence</span>
+          <h2 className="text-3xl md:text-4xl font-bold mt-4 mb-6 text-balance">
+            Strategic Locations for Optimal Service
+          </h2>
+          <p className="text-primary-foreground/80">
+            Our dual-location strategy enables us to provide round-the-clock support while maintaining cost efficiency
+            and quality standards.
+          </p>
+        </div>
+
+        <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+          {locations.map((location) => (
+            <div
+              key={location.country}
+              className="overflow-hidden rounded-xl bg-primary-foreground/5 border border-primary-foreground/10"
+            >
+              <div className="h-48 overflow-hidden">
+                <img
+                  src={`/placeholder.svg?height=300&width=600&query=${location.country === "United States" ? "modern office building New York skyline" : "modern business center Lahore Pakistan"}`}
+                  alt={`${location.country} office`}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="p-8">
+                <div className="flex items-start gap-4 mb-6">
+                  <div className="w-12 h-12 rounded-lg bg-secondary/20 flex items-center justify-center shrink-0">
+                    <MapPin className="h-6 w-6 text-secondary" />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-bold">{location.country}</h3>
+                    <span className="text-sm text-secondary font-medium">{location.role}</span>
+                  </div>
+                </div>
+                <p className="text-primary-foreground/70 text-sm whitespace-pre-line mb-6">{location.address}</p>
+                <ul className="space-y-2">
+                  {location.features.map((feature) => (
+                    <li key={feature} className="flex items-center gap-2 text-sm text-primary-foreground/80">
+                      <div className="w-1.5 h-1.5 rounded-full bg-secondary" />
+                      {feature}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Benefits */}
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16 max-w-4xl mx-auto">
+          {[
+            { icon: Clock, label: "24/7 Coverage" },
+            { icon: Users, label: "500+ Professionals" },
+            { icon: Wifi, label: "99.9% Uptime" },
+            { icon: MapPin, label: "2 Locations" },
+          ].map((item) => (
+            <div key={item.label} className="text-center">
+              <div className="w-12 h-12 rounded-full bg-secondary/20 flex items-center justify-center mx-auto mb-3">
+                <item.icon className="h-5 w-5 text-secondary" />
+              </div>
+              <span className="text-sm font-medium text-primary-foreground/80">{item.label}</span>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  )
+}
