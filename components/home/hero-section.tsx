@@ -1,14 +1,11 @@
 "use client"
 
 import Link from "next/link"
-import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { ArrowRight, CheckCircle2 } from "lucide-react"
 import { AnimatedSection } from "@/components/ui/animated-section"
 import { AnimatedText } from "@/components/ui/animated-text"
 import { MagneticButton } from "@/components/ui/magnetic-button"
-
-const highlights = ["24/7 Global Support", "Enterprise-Grade Quality", "Dedicated Account Managers"]
 
 export function HeroSection() {
   return (

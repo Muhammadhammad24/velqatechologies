@@ -44,7 +44,7 @@ export function CompanyInfo() {
                 customer interactions across multiple channels.
               </p>
               <p>
-                Under our DBA "Velqa Publishers," we also operate a digital publishing division that creates and
+                Under our DBA &ldquo;Velqa Publishers,&rdquo; we also operate a digital publishing division that creates and
                 monetizes digital content, showcasing our diversified business approach.
               </p>
             </div>

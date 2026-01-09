@@ -63,7 +63,7 @@ export function IndustriesSection() {
             <AnimatedSection key={industry.href} delay={index * 0.08}>
               <Link
                 href={industry.href}
-                className="group p-8 rounded-lg bg-white border border-gray-200 hover:bg-secondary hover:border-secondary text-left transition-all duration-200 block h-full relative overflow-hidden"
+                className="group p-8 rounded-lg bg-white border border-gray-200 hover:border-gray-300 text-left transition-all duration-300 block h-full relative overflow-hidden"
               >
                 {/* Background Image - Only on hover */}
                 <div className="absolute inset-0 opacity-0 group-hover:opacity-15 transition-opacity duration-300">
@@ -72,18 +72,17 @@ export function IndustriesSection() {
                     alt={industry.name}
                     className="w-full h-full object-cover object-center"
                   />
-                  <div className="absolute inset-0 bg-white/60 transition-colors duration-300"></div>
                 </div>
                 
                 {/* Content */}
                 <div className="relative z-10">
-                  <div className="w-12 h-12 rounded-lg bg-gray-100 flex items-center justify-center mb-6">
-                    <industry.icon className="h-6 w-6 text-gray-600 group-hover:text-primary" />
+                  <div className="w-12 h-12 rounded-lg bg-gray-100 group-hover:bg-secondary/10 flex items-center justify-center mb-6 transition-colors duration-300">
+                    <industry.icon className="h-6 w-6 text-gray-600 group-hover:text-secondary" />
                   </div>
-                  <h3 className="text-lg font-bold text-gray-900 group-hover:text-primary mb-3 uppercase tracking-wide">
+                  <h3 className="text-lg font-bold text-gray-900 group-hover:text-secondary mb-3 uppercase tracking-wide transition-colors duration-300">
                     {industry.name}
                   </h3>
-                  <p className="text-sm text-gray-600 group-hover:text-primary/80">
+                  <p className="text-sm text-gray-600 group-hover:text-gray-700 transition-colors duration-300">
                     Specialized solutions for {industry.name.toLowerCase()} industry requirements.
                   </p>
                 </div>
