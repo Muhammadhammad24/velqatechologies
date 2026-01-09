@@ -9,7 +9,7 @@ const industries = [
     icon: ShoppingCart,
     name: "E-commerce & Retail",
     href: "/industries/ecommerce",
-    image: "/young-professional-team-meeting-collaboration-dive.jpg"
+    image: "/diverse-business-team-meeting-in-modern-conference.jpg"
   },
   {
     icon: Laptop,
@@ -27,19 +27,19 @@ const industries = [
     icon: Heart,
     name: "Healthcare",
     href: "/industries/healthcare",
-    image: "/friendly-customer-support-representative-helping-c.jpg"
+    image: "/professional-customer-service-agent-with-headset-s.jpg"
   },
   {
     icon: Store,
     name: "Marketplace Sellers",
     href: "/industries/marketplace",
-    image: "/diverse-professional-team-collaborating-in-modern-.jpg"
+    image: "/modern-call-center-office-with-agents-wearing-head.jpg"
   },
   {
     icon: Layers,
     name: "Digital Products",
     href: "/industries/digital-products",
-    image: "/diverse-team-of-professionals-in-modern-office-cel.jpg"
+    image: "/modern-corporate-office-building-glass-facade-prof.jpg"
   },
 ]
 
@@ -58,31 +58,34 @@ export function IndustriesSection() {
           </p>
         </AnimatedSection>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {industries.map((industry, index) => (
             <AnimatedSection key={industry.href} delay={index * 0.08}>
               <Link
                 href={industry.href}
-                className="group p-6 rounded-xl bg-muted/50 hover:bg-primary text-center card-hover relative overflow-hidden"
+                className="group p-8 rounded-lg bg-white border border-gray-200 hover:bg-secondary hover:border-secondary text-left transition-all duration-200 block h-full relative overflow-hidden"
               >
-                {/* Background Image */}
-                <div className="absolute inset-0 opacity-0 group-hover:opacity-20 transition-opacity duration-500">
+                {/* Background Image - Only on hover */}
+                <div className="absolute inset-0 opacity-0 group-hover:opacity-15 transition-opacity duration-300">
                   <img 
                     src={industry.image} 
                     alt={industry.name}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover object-center"
                   />
+                  <div className="absolute inset-0 bg-white/60 transition-colors duration-300"></div>
                 </div>
                 
-                <div className="absolute inset-0 bg-gradient-to-br from-primary to-navy-dark opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-
+                {/* Content */}
                 <div className="relative z-10">
-                  <div className="w-12 h-12 rounded-full bg-background/80 group-hover:bg-primary-foreground/20 flex items-center justify-center mx-auto mb-4 transition-all duration-300 group-hover:scale-110">
-                    <industry.icon className="h-6 w-6 text-primary group-hover:text-primary-foreground transition-colors" />
+                  <div className="w-12 h-12 rounded-lg bg-gray-100 flex items-center justify-center mb-6">
+                    <industry.icon className="h-6 w-6 text-gray-600 group-hover:text-primary" />
                   </div>
-                  <span className="text-sm font-bold group-hover:text-primary-foreground transition-colors uppercase tracking-wide">
+                  <h3 className="text-lg font-bold text-gray-900 group-hover:text-primary mb-3 uppercase tracking-wide">
                     {industry.name}
-                  </span>
+                  </h3>
+                  <p className="text-sm text-gray-600 group-hover:text-primary/80">
+                    Specialized solutions for {industry.name.toLowerCase()} industry requirements.
+                  </p>
                 </div>
               </Link>
             </AnimatedSection>

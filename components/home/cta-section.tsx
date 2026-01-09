@@ -109,7 +109,7 @@ export function CTASection() {
               </div>
               <AnimatedText 
                 texts={animatedTexts}
-                className="text-4xl md:text-5xl lg:text-6xl font-black tracking-tight uppercase relative z-10"
+                className="text-4xl md:text-5xl lg:text-6xl font-black tracking-tight uppercase relative z-10 text-secondary"
                 interval={2500}
               />
             </div>

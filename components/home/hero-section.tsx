@@ -5,6 +5,7 @@ import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { ArrowRight, CheckCircle2 } from "lucide-react"
 import { AnimatedSection } from "@/components/ui/animated-section"
+import { AnimatedText } from "@/components/ui/animated-text"
 import { MagneticButton } from "@/components/ui/magnetic-button"
 
 const highlights = ["24/7 Global Support", "Enterprise-Grade Quality", "Dedicated Account Managers"]
@@ -62,9 +63,18 @@ export function HeroSection() {
             </AnimatedSection>
 
             <AnimatedSection delay={0.1}>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-black leading-tight mb-6 text-balance uppercase tracking-wide" itemProp="name">
-                ENTERPRISE BPO & <span className="text-gradient-animate">CUSTOMER EXPERIENCE</span> SOLUTIONS
-              </h1>
+              <div className="mb-6 relative">
+                <AnimatedText 
+                  texts={[
+                    "ENTERPRISE BPO & CUSTOMER EXPERIENCE SOLUTIONS",
+                    "PROFESSIONAL BUSINESS PROCESS OUTSOURCING",
+                    "WORLD-CLASS CUSTOMER SUPPORT SERVICES", 
+                    "ENTERPRISE-GRADE BPO SOLUTIONS"
+                  ]}
+                  className="text-4xl md:text-5xl lg:text-6xl font-black tracking-tight uppercase relative z-10 text-secondary"
+                  interval={3000}
+                />
+              </div>
             </AnimatedSection>
 
             <AnimatedSection delay={0.2}>
