@@ -76,11 +76,11 @@ export function Header() {
       <nav className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <Link href="/" className="flex items-center gap-2 group">
-            <div className="flex items-center">
-              <span className="text-3xl md:text-4xl font-bold text-white tracking-wider uppercase" style={{ fontFamily: 'system-ui, -apple-system, sans-serif', letterSpacing: '0.1em' }}>
-                VELQA
-              </span>
-            </div>
+            <img 
+              src="/logo.jpg" 
+              alt="Velqa Technologies Logo" 
+              className="h-12 md:h-14 w-auto object-contain"
+            />
           </Link>
 
           {/* Desktop Navigation */}

@@ -31,12 +31,11 @@ export function Footer() {
           {/* Company Info */}
           <div className="space-y-6">
             <div>
-              <span className="text-4xl font-bold text-white tracking-wider uppercase block" style={{ fontFamily: 'system-ui, -apple-system, sans-serif', letterSpacing: '0.1em' }}>
-                VELQA
-              </span>
-              <span className="text-sm text-primary-foreground/60 uppercase tracking-widest mt-1 block" style={{ letterSpacing: '0.3em' }}>
-                TECHNOLOGIES
-              </span>
+              <img 
+                src="/logo.jpg" 
+                alt="Velqa Technologies Logo" 
+                className="h-16 md:h-20 w-auto object-contain"
+              />
             </div>
             <p className="text-primary-foreground/80 text-sm leading-relaxed">
               Enterprise-grade BPO and customer experience solutions. Delivering exceptional service quality with 24/7
