@@ -2,31 +2,36 @@
 
 Modern Next.js website for Velqa Technologies - BPO and customer support services.
 
-## 🚀 Quick Deploy to Hostinger
+## 🚀 Quick Deploy to Vercel
 
-### Step 1: Push to GitHub
+### Option 1: One-Click Deploy (Easiest)
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/Muhammadhammad24/velqatechologies)
+
+### Option 2: Manual Deploy
+
+1. **Push to GitHub** (if not already done)
 ```bash
 git add .
-git commit -m "Deploy to Hostinger"
+git commit -m "Deploy to Vercel"
 git push origin main
 ```
 
-### Step 2: Connect Hostinger to GitHub
+2. **Connect to Vercel**
+   - Go to [vercel.com](https://vercel.com)
+   - Click "Add New Project"
+   - Import your GitHub repository: `Muhammadhammad24/velqatechologies`
+   - Click "Deploy"
 
-1. Go to **Hostinger Dashboard**
-2. Select your website → **GitHub** section
-3. Click **Connect to GitHub**
-4. Select this repository
-5. Configure build settings:
-   - **Build Command**: `npm run build`
-   - **Output Directory**: `out`
-   - **Install Command**: `npm ci`
-   - **Node Version**: `18` or `20`
+That's it! Vercel will automatically:
+- Detect Next.js
+- Install dependencies
+- Build the project
+- Deploy to production
 
-### Step 3: Deploy
-- Every push to `main` branch will automatically deploy
-- First deployment takes 3-5 minutes
-- Check deployment status in Hostinger dashboard
+### Automatic Deployments
+- Every push to `main` branch = Production deployment
+- Every pull request = Preview deployment
 
 ## 🛠️ Local Development
 
@@ -39,6 +44,9 @@ npm run dev
 
 # Build for production
 npm run build
+
+# Start production server
+npm start
 ```
 
 ## 📁 Project Structure
@@ -47,14 +55,14 @@ npm run build
 ├── app/              # Next.js app directory
 ├── components/       # React components
 ├── public/           # Static assets
-├── styles/           # Global styles
-└── out/              # Production build (generated)
+└── styles/           # Global styles
 ```
 
 ## 🌐 Live Website
 
-https://velqatechologies.com
+Production: https://velqatechologies.vercel.app
+Custom Domain: https://velqatechologies.com (configure in Vercel dashboard)
 
 ---
 
-Built with Next.js 14 | Deployed on Hostinger
+Built with Next.js 14 | Deployed on Vercel

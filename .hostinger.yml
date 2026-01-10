@@ -1,5 +1,0 @@
-build:
-  install: echo "Skipping install - using pre-built files"
-  command: echo "Using pre-built out folder"
-  publish: out
-  node_version: 18
