@@ -24,8 +24,8 @@ export function ContactInfo() {
             </div>
             <div>
               <p className="text-sm text-muted-foreground">Email</p>
-              <a href="mailto:info@velqatechnologies.com" className="font-medium text-foreground hover:text-primary">
-                info@velqatechnologies.com
+              <a href="mailto:Velqatechnologies@outlook.com" className="font-medium text-foreground hover:text-primary">
+                Velqatechnologies@outlook.com
               </a>
             </div>
           </div>
@@ -68,8 +68,40 @@ export function ContactInfo() {
           <MapPin className="h-5 w-5 text-muted-foreground mt-0.5 shrink-0" />
           <div>
             <p className="text-foreground">Business District Operations Center</p>
-            <p className="text-foreground">Lahore, Punjab</p>
+            <p className="text-foreground">Karachi, Sindh</p>
             <p className="text-muted-foreground text-sm mt-1">Pakistan</p>
+          </div>
+        </div>
+      </div>
+
+      {/* Thailand Office */}
+      <div className="p-6 rounded-xl bg-muted/50 border border-border">
+        <div className="flex items-center gap-2 mb-4">
+          <Globe className="h-4 w-4 text-secondary" />
+          <span className="text-sm font-semibold text-secondary uppercase tracking-wider">THAILAND OPERATIONS</span>
+        </div>
+        <div className="flex items-start gap-3">
+          <MapPin className="h-5 w-5 text-muted-foreground mt-0.5 shrink-0" />
+          <div>
+            <p className="text-foreground">Sukhumvit Business Center</p>
+            <p className="text-foreground">Bangkok, 10110</p>
+            <p className="text-muted-foreground text-sm mt-1">Thailand</p>
+          </div>
+        </div>
+      </div>
+
+      {/* Vietnam Office */}
+      <div className="p-6 rounded-xl bg-muted/50 border border-border">
+        <div className="flex items-center gap-2 mb-4">
+          <Globe className="h-4 w-4 text-secondary" />
+          <span className="text-sm font-semibold text-secondary uppercase tracking-wider">VIETNAM OPERATIONS</span>
+        </div>
+        <div className="flex items-start gap-3">
+          <MapPin className="h-5 w-5 text-muted-foreground mt-0.5 shrink-0" />
+          <div>
+            <p className="text-foreground">District 1 Business Hub</p>
+            <p className="text-foreground">Ho Chi Minh City, 700000</p>
+            <p className="text-muted-foreground text-sm mt-1">Vietnam</p>
           </div>
         </div>
       </div>

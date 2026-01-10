@@ -73,7 +73,7 @@ export default function PrivacyPage() {
               <section className="mb-8">
                 <h2 className="text-2xl font-semibold text-foreground mb-4">6. Contact Us</h2>
                 <p className="text-muted-foreground leading-relaxed">
-                  If you have questions about this privacy policy, please contact us at: privacy@velqa.com
+                  If you have questions about this privacy policy, please contact us at: Velqatechnologies@outlook.com
                 </p>
               </section>
             </div>

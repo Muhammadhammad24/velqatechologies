@@ -71,7 +71,7 @@ export default function TermsPage() {
               <section className="mb-8">
                 <h2 className="text-2xl font-semibold text-foreground mb-4">7. Contact Information</h2>
                 <p className="text-muted-foreground leading-relaxed">
-                  For questions about these terms, please contact us at: legal@velqa.com
+                  For questions about these terms, please contact us at: Velqatechnologies@outlook.com
                 </p>
               </section>
             </div>

@@ -135,7 +135,31 @@ export function Footer() {
                   <MapPin className="h-4 w-4 mt-0.5 shrink-0" />
                   <span>
                     Business District Operations Center<br />
-                    Lahore, Pakistan
+                    Karachi, Pakistan
+                  </span>
+                </div>
+              </div>
+
+              {/* Thailand Office */}
+              <div className="space-y-2">
+                <span className="text-xs font-semibold uppercase tracking-wider text-secondary">THAILAND OPERATIONS</span>
+                <div className="flex items-start gap-2 text-sm text-primary-foreground/70">
+                  <MapPin className="h-4 w-4 mt-0.5 shrink-0" />
+                  <span>
+                    Sukhumvit Business Center<br />
+                    Bangkok, Thailand
+                  </span>
+                </div>
+              </div>
+
+              {/* Vietnam Office */}
+              <div className="space-y-2">
+                <span className="text-xs font-semibold uppercase tracking-wider text-secondary">VIETNAM OPERATIONS</span>
+                <div className="flex items-start gap-2 text-sm text-primary-foreground/70">
+                  <MapPin className="h-4 w-4 mt-0.5 shrink-0" />
+                  <span>
+                    District 1 Business Hub<br />
+                    Ho Chi Minh City, Vietnam
                   </span>
                 </div>
               </div>
@@ -147,7 +171,11 @@ export function Footer() {
                 </div>
                 <div className="flex items-center gap-2 text-sm text-primary-foreground/70">
                   <Mail className="h-4 w-4 shrink-0" />
-                  <span>info@velqatechnologies.com</span>
+                  <span>Velqatechnologies@outlook.com</span>
+                </div>
+                <div className="flex items-center gap-2 text-sm text-primary-foreground/70">
+                  <Mail className="h-4 w-4 shrink-0" />
+                  <span>Velqapublishers@outlook.com</span>
                 </div>
               </div>
             </div>

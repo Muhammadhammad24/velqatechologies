@@ -11,9 +11,23 @@ const locations = [
   {
     country: "Pakistan",
     role: "Operations Center",
-    address: "Business District, Tower A\nLahore, Pakistan",
+    address: "Business District, Tower A\nKarachi, Pakistan",
     features: ["24/7 Operations", "Technical Support", "Customer Service"],
     image: "/lahore-pakistan-modern-business-district-skyline.jpg",
+  },
+  {
+    country: "Thailand",
+    role: "Regional Hub",
+    address: "Sukhumvit Business Center\nBangkok, Thailand",
+    features: ["APAC Operations", "Regional Support", "Business Development"],
+    image: "/placeholder.svg",
+  },
+  {
+    country: "Vietnam",
+    role: "Service Center",
+    address: "District 1 Business Hub\nHo Chi Minh City, Vietnam",
+    features: ["Customer Support", "Technical Services", "Quality Assurance"],
+    image: "/placeholder.svg",
   },
 ]
 
@@ -32,7 +46,7 @@ export function GlobalPresence() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
           {locations.map((location) => (
             <div
               key={location.country}
@@ -75,7 +89,7 @@ export function GlobalPresence() {
             { icon: Clock, label: "24/7 Coverage" },
             { icon: Users, label: "500+ Professionals" },
             { icon: Wifi, label: "99.9% Uptime" },
-            { icon: MapPin, label: "2 Locations" },
+            { icon: MapPin, label: "4 Locations" },
           ].map((item) => (
             <div key={item.label} className="text-center">
               <div className="w-12 h-12 rounded-full bg-secondary/20 flex items-center justify-center mx-auto mb-3">
