@@ -18,7 +18,7 @@ const locations = [
   {
     country: "Thailand",
     role: "Regional Hub",
-    address: "Sukhumvit Business Center\nBangkok, Thailand",
+    address: "Sukhumvit Business Center, Floor 15\n142 Sukhumvit Road, Khlong Toei\nBangkok 10110, Thailand",
     features: ["APAC Operations", "Regional Support", "Business Development"],
     image: "/placeholder.svg",
   },

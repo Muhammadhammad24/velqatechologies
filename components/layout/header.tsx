@@ -60,7 +60,7 @@ export function Header() {
             </span>
             <span className="flex items-center gap-2 hover:text-secondary transition-colors cursor-pointer">
               <Mail className="h-3 w-3" />
-              info@velqatechnologies.com
+              Velqatechnologies@outlook.com
             </span>
           </div>
           <div className="flex items-center gap-2">
@@ -79,7 +79,7 @@ export function Header() {
             <img 
               src="/logo.jpg" 
               alt="Velqa Technologies Logo" 
-              className="h-10 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
+              className="h-12 md:h-14 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
             />
           </Link>
 

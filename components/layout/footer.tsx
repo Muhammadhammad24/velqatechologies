@@ -30,11 +30,11 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Company Info */}
           <div className="space-y-6">
-            <div>
+            <div className="bg-white/10 p-3 rounded-lg inline-block">
               <img 
                 src="/logo.jpg" 
                 alt="Velqa Technologies Logo" 
-                className="h-12 w-auto object-contain"
+                className="h-16 w-auto object-contain"
               />
             </div>
             <p className="text-primary-foreground/80 text-sm leading-relaxed">
@@ -149,8 +149,9 @@ export function Footer() {
                 <div className="flex items-start gap-2 text-sm text-primary-foreground/70">
                   <MapPin className="h-4 w-4 mt-0.5 shrink-0" />
                   <span>
-                    Sukhumvit Business Center<br />
-                    Bangkok, Thailand
+                    Sukhumvit Business Center, Floor 15<br />
+                    142 Sukhumvit Road, Khlong Toei<br />
+                    Bangkok 10110, Thailand
                   </span>
                 </div>
               </div>

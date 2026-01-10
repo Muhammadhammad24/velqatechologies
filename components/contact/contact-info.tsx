@@ -83,8 +83,9 @@ export function ContactInfo() {
         <div className="flex items-start gap-3">
           <MapPin className="h-5 w-5 text-muted-foreground mt-0.5 shrink-0" />
           <div>
-            <p className="text-foreground">Sukhumvit Business Center</p>
-            <p className="text-foreground">Bangkok, 10110</p>
+            <p className="text-foreground">Sukhumvit Business Center, Floor 15</p>
+            <p className="text-foreground">142 Sukhumvit Road, Khlong Toei</p>
+            <p className="text-foreground">Bangkok 10110</p>
             <p className="text-muted-foreground text-sm mt-1">Thailand</p>
           </div>
         </div>
