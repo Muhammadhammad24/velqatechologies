@@ -34,7 +34,7 @@ export function Footer() {
               <img 
                 src="/logo.jpg" 
                 alt="Velqa Technologies Logo" 
-                className="h-16 md:h-20 w-auto object-contain"
+                className="h-20 md:h-24 w-auto object-contain"
               />
             </div>
             <p className="text-primary-foreground/80 text-sm leading-relaxed">

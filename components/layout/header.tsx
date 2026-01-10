@@ -60,11 +60,11 @@ export function Header() {
             </span>
             <span className="flex items-center gap-2 hover:text-secondary transition-colors cursor-pointer">
               <Mail className="h-3 w-3" />
-              Velqatechnologies@outlook.com
+              info@velqatechnologies.com
             </span>
           </div>
           <div className="flex items-center gap-2">
-            <span className="text-xs opacity-80">📍 1463 Coffeen Avenue STE 1200, Sheridan, WY 82801, US</span>
+            <span className="text-xs opacity-80">📍 142 Sukhumvit Road, Khlong Toei, Bangkok 10110, Thailand</span>
             <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-secondary text-secondary-foreground text-xs font-medium animate-pulse-glow">
               24/7 Support Available
             </span>
@@ -75,12 +75,13 @@ export function Header() {
       {/* Main navigation */}
       <nav className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
-          <Link href="/" className="flex items-center gap-2 group transition-transform duration-300 hover:scale-105">
-            <img 
-              src="/logo.jpg" 
-              alt="Velqa Technologies Logo" 
-              className="h-12 md:h-14 w-auto object-contain"
-            />
+          <Link href="/" className="flex items-center gap-2 group">
+            <div className="flex items-center">
+              <span className="text-2xl font-bold text-primary group-hover:text-secondary transition-colors duration-300">
+                Velqa
+              </span>
+              <span className="text-2xl font-light text-muted-foreground ml-1">Technologies</span>
+            </div>
           </Link>
 
           {/* Desktop Navigation */}
@@ -156,31 +157,18 @@ export function Header() {
             </DropdownMenu>
 
             {[
-              { href: "https://velqapublishers.com/index.html", label: "VELQA PUBLISHERS", external: true },
-              { href: "/careers", label: "CAREERS", external: false },
-              { href: "/contact", label: "CONTACT", external: false },
+              { href: "/velqa-publishers", label: "VELQA PUBLISHERS" },
+              { href: "/careers", label: "CAREERS" },
+              { href: "/contact", label: "CONTACT" },
             ].map((link) => (
-              link.external ? (
-                <a
-                  key={link.href}
-                  href={link.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="relative text-sm font-bold text-foreground/80 hover:text-foreground transition-colors group uppercase tracking-wide"
-                >
-                  {link.label}
-                  <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-secondary transition-all duration-300 group-hover:w-full" />
-                </a>
-              ) : (
-                <Link
-                  key={link.href}
-                  href={link.href}
-                  className="relative text-sm font-bold text-foreground/80 hover:text-foreground transition-colors group uppercase tracking-wide"
-                >
-                  {link.label}
-                  <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-secondary transition-all duration-300 group-hover:w-full" />
-                </Link>
-              )
+              <Link
+                key={link.href}
+                href={link.href}
+                className="relative text-sm font-bold text-foreground/80 hover:text-foreground transition-colors group uppercase tracking-wide"
+              >
+                {link.label}
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-secondary transition-all duration-300 group-hover:w-full" />
+              </Link>
             ))}
           </div>
 
@@ -289,16 +277,14 @@ export function Header() {
               </div>
             </div>
 
-            <a
-              href="https://velqapublishers.com/index.html"
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link
+              href="/velqa-publishers"
               className="text-sm font-bold text-foreground/80 hover:text-foreground animate-slide-up uppercase tracking-wide"
               onClick={() => setMobileMenuOpen(false)}
               style={{ animationDelay: "0.25s" }}
             >
               VELQA PUBLISHERS
-            </a>
+            </Link>
             <Link
               href="/careers"
               className="text-sm font-bold text-foreground/80 hover:text-foreground animate-slide-up uppercase tracking-wide"
