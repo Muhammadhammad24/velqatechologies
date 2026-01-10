@@ -54,14 +54,14 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: "/icon-light-32x32.png", media: "(prefers-color-scheme: light)", sizes: "32x32" },
-      { url: "/icon-dark-32x32.png", media: "(prefers-color-scheme: dark)", sizes: "32x32" },
-      { url: "/icon.svg", type: "image/svg+xml" },
+      { url: "/favicone.png", sizes: "32x32", type: "image/png" },
+      { url: "/favicone.png", sizes: "16x16", type: "image/png" },
+      { url: "/favicone.png", type: "image/png" },
     ],
     apple: [
-      { url: "/apple-icon.png", sizes: "180x180", type: "image/png" },
+      { url: "/favicone.png", sizes: "180x180", type: "image/png" },
     ],
-    shortcut: "/icon.svg",
+    shortcut: "/favicone.png",
   },
   manifest: "/manifest.json",
   openGraph: {
@@ -130,7 +130,7 @@ export default function RootLayout({
     name: 'Velqa Technologies LLC',
     alternateName: 'Velqa Technologies',
     url: 'https://velqatechnologies.com',
-    logo: 'https://velqatechnologies.com/icon.svg',
+    logo: 'https://velqatechnologies.com/logo.jpg',
     description: 'Award-winning BPO services trusted by Fortune 500 companies. 24/7 enterprise customer support with 99.8% satisfaction rate.',
     foundingDate: '2020',
     founders: [

@@ -52,7 +52,7 @@ export default function HomePage() {
       '@type': 'Organization',
       name: 'Velqa Technologies LLC',
       url: 'https://velqatechnologies.com',
-      logo: 'https://velqatechnologies.com/icon.svg',
+      logo: 'https://velqatechnologies.com/logo.jpg',
       description: 'Enterprise BPO and customer experience solutions provider',
       aggregateRating: {
         '@type': 'AggregateRating',

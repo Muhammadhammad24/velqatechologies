@@ -31,8 +31,11 @@ export function Footer() {
           {/* Company Info */}
           <div className="space-y-6">
             <div>
-              <span className="text-2xl font-bold">Velqa</span>
-              <span className="text-2xl font-light text-primary-foreground/70 ml-1">Technologies</span>
+              <img 
+                src="/logo.jpg" 
+                alt="Velqa Technologies Logo" 
+                className="h-12 w-auto object-contain"
+              />
             </div>
             <p className="text-primary-foreground/80 text-sm leading-relaxed">
               Enterprise-grade BPO and customer experience solutions. Delivering exceptional service quality with 24/7
