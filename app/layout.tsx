@@ -54,14 +54,14 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
+      { url: "/faviconesvg.svg", type: "image/svg+xml" },
       { url: "/favicone.png", sizes: "32x32", type: "image/png" },
       { url: "/favicone.png", sizes: "16x16", type: "image/png" },
-      { url: "/favicone.png", type: "image/png" },
     ],
     apple: [
       { url: "/favicone.png", sizes: "180x180", type: "image/png" },
     ],
-    shortcut: "/favicone.png",
+    shortcut: "/faviconesvg.svg",
   },
   manifest: "/manifest.json",
   openGraph: {

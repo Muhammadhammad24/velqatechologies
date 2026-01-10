@@ -13,6 +13,12 @@
   "categories": ["business", "productivity", "utilities"],
   "icons": [
     {
+      "src": "/faviconesvg.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
       "src": "/favicone.png",
       "sizes": "32x32",
       "type": "image/png",
