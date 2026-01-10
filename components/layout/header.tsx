@@ -75,14 +75,12 @@ export function Header() {
       {/* Main navigation */}
       <nav className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
-          <Link href="/" className="flex items-center gap-3 group">
-            <div className="flex items-center gap-3 px-4 py-2 rounded-lg bg-white/95 shadow-md border border-blue-100 transition-all duration-300 group-hover:shadow-lg group-hover:scale-105">
-              <img 
-                src="/logo.jpg" 
-                alt="Velqa Technologies Logo" 
-                className="h-10 md:h-12 w-auto object-contain"
-              />
-            </div>
+          <Link href="/" className="flex items-center gap-2 group transition-transform duration-300 hover:scale-105">
+            <img 
+              src="/logo.jpg" 
+              alt="Velqa Technologies Logo" 
+              className="h-12 md:h-14 w-auto object-contain"
+            />
           </Link>
 
           {/* Desktop Navigation */}
