@@ -76,11 +76,13 @@ export function Header() {
       <nav className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <Link href="/" className="flex items-center gap-2 group">
-            <img 
-              src="/logo.jpg" 
-              alt="Velqa Technologies Logo" 
-              className="h-12 md:h-14 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
-            />
+            <div className="bg-white rounded-md px-3 py-2 shadow-sm border border-gray-200">
+              <img 
+                src="/logo.jpg" 
+                alt="Velqa Technologies Logo" 
+                className="h-14 md:h-16 w-auto object-contain"
+              />
+            </div>
           </Link>
 
           {/* Desktop Navigation */}

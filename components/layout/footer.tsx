@@ -30,11 +30,11 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Company Info */}
           <div className="space-y-6">
-            <div className="bg-white/10 p-3 rounded-lg inline-block">
+            <div className="bg-white rounded-lg p-5 inline-block shadow-lg border-2 border-white/20">
               <img 
                 src="/logo.jpg" 
                 alt="Velqa Technologies Logo" 
-                className="h-16 w-auto object-contain"
+                className="h-16 md:h-20 w-auto object-contain"
               />
             </div>
             <p className="text-primary-foreground/80 text-sm leading-relaxed">
