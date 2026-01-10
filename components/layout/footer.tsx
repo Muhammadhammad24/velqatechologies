@@ -30,12 +30,14 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Company Info */}
           <div className="space-y-6">
-            <div>
-              <img 
-                src="/logo.jpg" 
-                alt="Velqa Technologies Logo" 
-                className="h-16 md:h-20 w-auto object-contain"
-              />
+            <div className="inline-block">
+              <div className="bg-white rounded-xl p-5 shadow-xl border-2 border-blue-200">
+                <img 
+                  src="/logo.jpg" 
+                  alt="Velqa Technologies Logo" 
+                  className="h-14 md:h-16 w-auto object-contain"
+                />
+              </div>
             </div>
             <p className="text-primary-foreground/80 text-sm leading-relaxed">
               Enterprise-grade BPO and customer experience solutions. Delivering exceptional service quality with 24/7
