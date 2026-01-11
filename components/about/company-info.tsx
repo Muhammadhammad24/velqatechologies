@@ -34,14 +34,15 @@ export function CompanyInfo() {
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">Who We Are</h2>
             <div className="space-y-4 text-muted-foreground leading-relaxed">
               <p>
-                Velqa Technologies LLC is a premier Business Process Outsourcing (BPO) company headquartered in the
-                United States. We specialize in delivering enterprise-grade customer experience solutions that help
-                businesses scale their operations while maintaining exceptional service quality.
+                Velqa Technologies LLC delivers enterprise-ready BPO & CX services with a focus on compliance, quality assurance, and measurable CX outcomes across global markets.
               </p>
               <p>
                 Our strategic operations center in Pakistan enables us to provide cost-effective, 24/7 support coverage
                 without compromising on quality. With a team of over 500 skilled professionals, we handle millions of
                 customer interactions across multiple channels.
+              </p>
+              <p>
+                Built on enterprise-grade quality frameworks, compliance-ready operations, and advanced CX tool stacks, we deliver performance-driven results that transform customer experience operations.
               </p>
               <p>
                 Under our DBA &ldquo;Velqa Publishers,&rdquo; we also operate a digital publishing division that creates and

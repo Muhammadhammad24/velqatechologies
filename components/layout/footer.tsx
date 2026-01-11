@@ -2,12 +2,12 @@ import Link from "next/link"
 import { Phone, Mail, MapPin, Linkedin, Twitter, Facebook } from "lucide-react"
 
 const services = [
-  { name: "Call Center & BPO", href: "/services/call-center" },
-  { name: "Customer Support", href: "/services/customer-support" },
-  { name: "Email Support", href: "/services/email-support" },
-  { name: "Live Chat Support", href: "/services/live-chat" },
-  { name: "Order Management", href: "/services/order-management" },
-  { name: "Back-Office Services", href: "/services/back-office" },
+  { name: "BPO & CX Services", href: "/services/bpo-cx-services" },
+  { name: "Inbound Customer Support", href: "/services/inbound-support" },
+  { name: "Technical & Help Desk Support", href: "/services/technical-support" },
+  { name: "Multi-Channel CX Operations", href: "/services/multi-channel" },
+  { name: "Order & Account Management", href: "/services/order-account-management" },
+  { name: "Back-Office Operations", href: "/services/back-office-operations" },
 ]
 
 const company = [

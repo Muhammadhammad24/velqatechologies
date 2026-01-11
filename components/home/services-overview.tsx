@@ -1,54 +1,54 @@
 "use client"
 
 import Link from "next/link"
-import { Phone, MessageSquare, Mail, MessagesSquare, Package, FileText, ArrowRight } from "lucide-react"
+import { Phone, MessageSquare, Settings, MessagesSquare, Package, FileText, ArrowRight } from "lucide-react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { AnimatedSection } from "@/components/ui/animated-section"
 
 const services = [
   {
     icon: Phone,
-    title: "Call Center & BPO",
+    title: "BPO & CX Services",
     description:
-      "Comprehensive inbound and outbound call center services with IVR, technical support, and telemarketing capabilities.",
-    href: "/services/call-center",
+      "Enterprise-grade CX operations built on quality frameworks, compliance-ready operations, and performance-driven KPIs.",
+    href: "/services/bpo-cx-services",
     image: "/professional-call-center-floor-with-agents-working.jpg"
   },
   {
     icon: MessageSquare,
-    title: "Customer Support",
+    title: "Inbound Customer Support",
     description:
-      "Professional phone support with escalation handling, 24/7 availability, and dedicated account management.",
-    href: "/services/customer-support",
+      "CX-driven inbound operations with compliance-first approach and industry-trained agents for exceptional experiences.",
+    href: "/services/inbound-support",
     image: "/friendly-customer-support-representative-helping-c.jpg"
   },
   {
-    icon: Mail,
-    title: "Email Support",
+    icon: Settings,
+    title: "Technical & Help Desk Support",
     description:
-      "Efficient ticket resolution, refund processing, and escalation workflows for seamless email management.",
-    href: "/services/email-support",
+      "Process-led service delivery with integrated CX tools for real-time issue resolution and analytics.",
+    href: "/services/technical-support",
     image: "/professional-man-at-computer-technical-support-spe.jpg"
   },
   {
     icon: MessagesSquare,
-    title: "Live Chat Support",
-    description: "Real-time customer engagement with chatbot integration and multilingual support capabilities.",
-    href: "/services/live-chat",
+    title: "Multi-Channel CX Operations",
+    description: "Unified CX platforms enable seamless interactions across voice, email, chat, and messaging channels.",
+    href: "/services/multi-channel",
     image: "/professional-woman-with-headset-smiling-customer-s.jpg"
   },
   {
     icon: Package,
-    title: "Order Management",
-    description: "End-to-end order tracking, returns processing, and RMA workflow management.",
-    href: "/services/order-management",
+    title: "Order & Account Management",
+    description: "End-to-end order tracking, account management, and returns processing with streamlined workflows.",
+    href: "/services/order-account-management",
     image: "/diverse-business-team-meeting-in-modern-conference.jpg"
   },
   {
     icon: FileText,
-    title: "Back-Office Services",
-    description: "Data entry, CRM management, and administrative support to streamline your operations.",
-    href: "/services/back-office",
+    title: "Back-Office Operations",
+    description: "Process-led back-office operations including data management, CRM administration, and document processing.",
+    href: "/services/back-office-operations",
     image: "/diverse-team-of-professionals-in-modern-office-cel.jpg"
   },
 ]
@@ -60,11 +60,10 @@ export function ServicesOverview() {
         <AnimatedSection className="text-center max-w-3xl mx-auto mb-16">
           <span className="text-sm font-semibold text-secondary uppercase tracking-wider">Our Services</span>
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mt-4 mb-6 text-balance">
-            Comprehensive BPO Solutions for Modern Enterprises
+            Enterprise BPO & CX Solutions
           </h2>
           <p className="text-muted-foreground text-lg">
-            From customer-facing interactions to back-office operations, we provide end-to-end support that drives
-            customer satisfaction and operational efficiency.
+            Process-led service delivery with quality-monitored customer interactions that drive measurable business outcomes and operational excellence.
           </p>
         </AnimatedSection>
 

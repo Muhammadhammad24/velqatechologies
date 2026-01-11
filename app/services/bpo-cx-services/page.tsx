@@ -2,29 +2,28 @@ import { Header } from "@/components/layout/header"
 import { Footer } from "@/components/layout/footer"
 import Link from "next/link"
 import Image from "next/image"
-import { Phone, MessageSquare, Settings, MessagesSquare, Package, FileText, ArrowRight, CheckCircle2 } from "lucide-react"
+import { Phone, MessagesSquare, Package, FileText, ArrowRight, CheckCircle2, Shield, BarChart3, Settings } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Our Services | Enterprise BPO & Customer Experience Solutions | Velqa Technologies LLC",
+  title: "BPO & CX Services | Enterprise Customer Experience Solutions | Velqa Technologies LLC",
   description:
-    "🏆 Comprehensive BPO and customer experience services: Call Center & BPO, Customer Support, Email & Chat Support, Order Management & Returns, Back-Office Services. 24/7 professional support with 99.8% satisfaction rate.",
+    "🏆 Enterprise-grade BPO & CX services built on quality frameworks, compliance-ready operations, advanced tool stacks, and performance-driven KPIs for measurable business outcomes.",
   keywords: [
-    "BPO services", "call center services", "customer support outsourcing", "email support services",
-    "live chat support", "order management BPO", "back office services", "customer experience solutions",
-    "professional customer service", "24/7 support services", "enterprise BPO solutions", "outsourcing services",
-    "technical support outsourcing", "multilingual customer support", "scalable support solutions"
+    "BPO services", "CX operations", "customer experience solutions", "enterprise BPO",
+    "quality frameworks", "compliance ready", "CX tool stack", "measurable outcomes",
+    "professional customer service", "24/7 support services", "enterprise solutions"
   ],
   openGraph: {
-    title: "Our Services | Enterprise BPO & Customer Experience Solutions",
-    description: "🏆 Comprehensive BPO services with 24/7 professional support and 99.8% satisfaction rate",
+    title: "BPO & CX Services | Enterprise Customer Experience Solutions",
+    description: "🏆 Enterprise-grade CX operations with quality frameworks and measurable outcomes",
     images: [
       {
         url: "/modern-call-center-office-with-agents-wearing-head.jpg",
         width: 1200,
         height: 630,
-        alt: "Velqa Technologies - Comprehensive BPO Services",
+        alt: "Velqa Technologies - Enterprise BPO & CX Services",
       },
     ],
   },
@@ -33,34 +32,19 @@ export const metadata: Metadata = {
 const services = [
   {
     icon: Phone,
-    title: "BPO & CX Services",
-    description:
-      "Enterprise-grade CX operations built on quality frameworks, compliance-ready operations, advanced tool stacks, and performance-driven KPIs to deliver measurable business outcomes.",
-    features: ["QA Frameworks", "Compliance Readiness", "Tool Stack", "Measurable Outcomes", "24/7 Operations"],
-    href: "/services/bpo-cx-services",
-    image: "/professional-call-center-floor-with-agents-working.jpg",
-  },
-  {
-    icon: MessageSquare,
     title: "Inbound Customer Support",
     description:
       "CX-driven inbound operations with compliance-first approach, controlled access environments, and industry-trained agents who understand customer expectations and regulatory requirements.",
-    features: ["24/7 Availability", "Compliance-Ready", "Vertical Expertise", "Quality Monitoring", "SLA Management"],
+    features: ["24/7 Availability", "Compliance-Ready Operations", "Vertical Expertise", "Quality Monitoring", "SLA Management"],
     href: "/services/inbound-support",
-    image: "/friendly-customer-support-representative-helping-c.jpg",
+    image: "/professional-call-center-floor-with-agents-working.jpg",
   },
   {
     icon: Settings,
     title: "Technical & Help Desk Support",
     description:
       "Process-led service delivery with integrated CX tools including ticketing systems, remote support platforms, and real-time dashboards for issue resolution and analytics.",
-    features: [
-      "Tiered Support",
-      "Tool Integration",
-      "Remote Assistance",
-      "Real-time Analytics",
-      "Knowledge Base",
-    ],
+    features: ["Tiered Support", "Tool Integration", "Remote Assistance", "Real-time Analytics", "Knowledge Base"],
     href: "/services/technical-support",
     image: "/professional-man-at-computer-technical-support-spe.jpg",
   },
@@ -78,6 +62,15 @@ const services = [
     ],
     href: "/services/multi-channel",
     image: "/professional-woman-with-headset-smiling-customer-s.jpg",
+  },
+  {
+    icon: BarChart3,
+    title: "CX Quality & Monitoring",
+    description:
+      "Quality-monitored customer interactions through dedicated QA teams, call audits, scorecards, and continuous performance reviews to ensure service consistency and CX improvement.",
+    features: ["QA Frameworks", "Performance KPIs", "Continuous Monitoring", "CSAT Tracking", "SLA Adherence"],
+    href: "/services/cx-quality",
+    image: "/diverse-business-team-meeting-in-modern-conference.jpg",
   },
   {
     icon: Package,
@@ -99,16 +92,16 @@ const services = [
   },
 ]
 
-export default function ServicesPage() {
+export default function BPOCXServicesPage() {
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'WebPage',
-    name: 'Our Services - Velqa Technologies',
-    description: 'Comprehensive BPO and customer experience services with 24/7 professional support',
-    url: 'https://velqatechnologies.com/services',
+    name: 'BPO & CX Services - Velqa Technologies',
+    description: 'Enterprise-grade BPO & CX services with quality frameworks and measurable outcomes',
+    url: 'https://velqatechnologies.com/services/bpo-cx-services',
     mainEntity: {
       '@type': 'ItemList',
-      name: 'BPO Services',
+      name: 'BPO & CX Services',
       itemListElement: services.map((service, index) => ({
         '@type': 'ListItem',
         position: index + 1,
@@ -121,34 +114,9 @@ export default function ServicesPage() {
           provider: {
             '@type': 'Organization',
             name: 'Velqa Technologies LLC'
-          },
-          serviceType: 'Business Process Outsourcing',
-          areaServed: 'Worldwide',
-          availableChannel: {
-            '@type': 'ServiceChannel',
-            availableLanguage: 'English',
-            servicePhone: '+1-555-123-4567',
-            serviceUrl: 'https://velqatechnologies.com/contact'
           }
         }
       }))
-    },
-    breadcrumb: {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        {
-          '@type': 'ListItem',
-          position: 1,
-          name: 'Home',
-          item: 'https://velqatechnologies.com'
-        },
-        {
-          '@type': 'ListItem',
-          position: 2,
-          name: 'Services',
-          item: 'https://velqatechnologies.com/services'
-        }
-      ]
     }
   }
 
@@ -161,12 +129,12 @@ export default function ServicesPage() {
       <div className="min-h-screen flex flex-col">
       <Header />
       <main className="flex-1">
-        {/* Hero - Added background image */}
-        <section className="relative bg-primary text-primary-foreground py-20 md:py-28 overflow-hidden" itemScope itemType="https://schema.org/Service">
+        {/* Hero */}
+        <section className="relative bg-primary text-primary-foreground py-20 md:py-28 overflow-hidden">
           <div className="absolute inset-0">
             <Image
               src="/modern-call-center-office-with-agents-wearing-head.jpg"
-              alt="Velqa Technologies comprehensive BPO services environment"
+              alt="Enterprise BPO & CX operations environment"
               fill
               className="object-cover opacity-15"
               priority
@@ -175,47 +143,76 @@ export default function ServicesPage() {
           </div>
           <div className="container mx-auto px-4 relative">
             <div className="max-w-3xl">
-              <span className="text-sm font-semibold text-secondary uppercase tracking-wider">Our Services</span>
-              <h1 className="text-4xl md:text-5xl font-bold mt-4 mb-6 text-balance" itemProp="name">
-                Enterprise BPO & CX Solutions
+              <span className="text-sm font-semibold text-secondary uppercase tracking-wider">BPO & CX Services</span>
+              <h1 className="text-4xl md:text-5xl font-bold mt-4 mb-6 text-balance">
+                Enterprise-Grade CX Operations
               </h1>
-              <p className="text-lg text-primary-foreground/80 leading-relaxed" itemProp="description">
-                Process-led service delivery with quality-monitored customer interactions that drive measurable business outcomes and operational excellence.
+              <p className="text-lg text-primary-foreground/80 leading-relaxed mb-8">
+                Our BPO & CX services are built on enterprise-grade quality frameworks, compliance-ready operations, advanced CX tool stacks, and performance-driven KPIs to deliver measurable business outcomes.
               </p>
+              
+              {/* Enterprise Features */}
+              <div className="grid sm:grid-cols-2 gap-4 mt-8">
+                <div className="flex items-start gap-3 bg-primary-foreground/10 p-4 rounded-lg">
+                  <Shield className="h-5 w-5 text-secondary shrink-0 mt-0.5" />
+                  <div>
+                    <h3 className="font-semibold text-sm mb-1">QA Frameworks</h3>
+                    <p className="text-xs text-primary-foreground/70">Dedicated quality assurance teams</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3 bg-primary-foreground/10 p-4 rounded-lg">
+                  <CheckCircle2 className="h-5 w-5 text-secondary shrink-0 mt-0.5" />
+                  <div>
+                    <h3 className="font-semibold text-sm mb-1">Compliance Readiness</h3>
+                    <p className="text-xs text-primary-foreground/70">Controlled access environments</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3 bg-primary-foreground/10 p-4 rounded-lg">
+                  <Settings className="h-5 w-5 text-secondary shrink-0 mt-0.5" />
+                  <div>
+                    <h3 className="font-semibold text-sm mb-1">Tool Stack</h3>
+                    <p className="text-xs text-primary-foreground/70">Advanced CX platforms</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3 bg-primary-foreground/10 p-4 rounded-lg">
+                  <BarChart3 className="h-5 w-5 text-secondary shrink-0 mt-0.5" />
+                  <div>
+                    <h3 className="font-semibold text-sm mb-1">Measurable Outcomes</h3>
+                    <p className="text-xs text-primary-foreground/70">Performance-driven KPIs</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </section>
 
-        {/* Services List - Updated with real images */}
+        {/* Services List */}
         <section className="py-20">
           <div className="container mx-auto px-4">
-            <div className="space-y-20" role="list" aria-label="Our BPO services">
+            <div className="space-y-20">
               {services.map((service, index) => (
                 <article
                   key={service.href}
                   className={`grid lg:grid-cols-2 gap-12 items-center ${index % 2 === 1 ? "lg:flex-row-reverse" : ""}`}
-                  itemScope
-                  itemType="https://schema.org/Service"
-                  role="listitem"
                 >
                   <div className={index % 2 === 1 ? "lg:order-2" : ""}>
                     <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mb-6">
                       <service.icon className="h-7 w-7 text-primary" />
                     </div>
-                    <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4" itemProp="name">{service.title}</h2>
-                    <p className="text-muted-foreground leading-relaxed mb-6" itemProp="description">{service.description}</p>
-                    <ul className="grid sm:grid-cols-2 gap-3 mb-8" role="list" aria-label={`${service.title} features`}>
+                    <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">{service.title}</h2>
+                    <p className="text-muted-foreground leading-relaxed mb-6">{service.description}</p>
+                    <ul className="grid sm:grid-cols-2 gap-3 mb-8">
                       {service.features.map((feature) => (
-                        <li key={feature} className="flex items-center gap-2 text-sm text-foreground" role="listitem">
-                          <CheckCircle2 className="h-4 w-4 text-secondary shrink-0" aria-hidden="true" />
+                        <li key={feature} className="flex items-center gap-2 text-sm text-foreground">
+                          <CheckCircle2 className="h-4 w-4 text-secondary shrink-0" />
                           {feature}
                         </li>
                       ))}
                     </ul>
-                    <Button asChild className="bg-primary text-primary-foreground hover:bg-primary/90" aria-label={`Learn more about ${service.title}`}>
+                    <Button asChild className="bg-primary text-primary-foreground hover:bg-primary/90">
                       <Link href={service.href}>
                         Learn More
-                        <ArrowRight className="ml-2 h-4 w-4" aria-hidden="true" />
+                        <ArrowRight className="ml-2 h-4 w-4" />
                       </Link>
                     </Button>
                   </div>
@@ -224,10 +221,9 @@ export default function ServicesPage() {
                   >
                     <img
                       src={service.image}
-                      alt={`${service.title} - Professional BPO service environment`}
+                      alt={`${service.title} - Enterprise CX operations`}
                       className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                       loading="lazy"
-                      itemProp="image"
                     />
                   </div>
                 </article>
@@ -240,10 +236,10 @@ export default function ServicesPage() {
         <section className="py-20 bg-muted/30">
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6 text-balance">
-              Ready to Optimize Your Customer Operations?
+              Ready to Transform Your CX Operations?
             </h2>
             <p className="text-muted-foreground text-lg mb-8 max-w-2xl mx-auto">
-              Contact us today for a free consultation and discover how our services can transform your business.
+              Contact us today for a consultation and discover how our enterprise-grade BPO & CX services can deliver measurable outcomes.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" className="bg-secondary text-secondary-foreground hover:bg-secondary/90">
