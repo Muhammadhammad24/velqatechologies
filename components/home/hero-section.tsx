@@ -9,37 +9,32 @@ import { MagneticButton } from "@/components/ui/magnetic-button"
 
 export function HeroSection() {
   return (
-    <section className="relative overflow-hidden bg-primary text-primary-foreground" itemScope itemType="https://schema.org/Service">
+    <section className="relative overflow-hidden bg-gradient-mesh text-primary-foreground" style={{ backgroundColor: 'hsl(222 84% 5%)' }} itemScope itemType="https://schema.org/Service">
       <div className="absolute inset-0">
-        <img
-          src="/modern-call-center-office-with-agents-wearing-head.jpg"
-          alt="Professional call center environment with agents providing 24/7 customer support services"
-          width={1920}
-          height={1080}
-          loading="eager"
-          fetchPriority="high"
-          className="object-cover opacity-20 w-full h-full"
-        />
-        <div className="absolute inset-0 bg-gradient-to-r from-primary via-primary/95 to-primary/80" />
+        <div className="absolute inset-0 bg-gradient-to-br from-[hsl(222_84%_5%)] via-[hsl(222_47%_11%)] to-[hsl(217_33%_17%)]" />
+        {/* Animated gradient orbs */}
+        <div className="absolute top-0 left-0 w-96 h-96 bg-orange-500/10 rounded-full blur-3xl animate-pulse-glow" style={{ animationDuration: '4s' }} />
+        <div className="absolute bottom-0 right-0 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl animate-pulse-glow" style={{ animationDuration: '6s', animationDelay: '1s' }} />
       </div>
 
       <div className="absolute inset-0 overflow-hidden">
         <div
-          className="absolute inset-0 opacity-10"
+          className="absolute inset-0 opacity-20"
           style={{
-            backgroundImage: `radial-gradient(circle at 25% 25%, rgba(255,255,255,0.1) 0%, transparent 50%),
-                           radial-gradient(circle at 75% 75%, rgba(255,255,255,0.05) 0%, transparent 50%)`,
+            backgroundImage: `radial-gradient(circle at 25% 25%, rgba(255,102,0,0.15) 0%, transparent 50%),
+                           radial-gradient(circle at 75% 75%, rgba(59,130,246,0.1) 0%, transparent 50%)`,
           }}
         />
         {/* Animated particles */}
-        {[...Array(6)].map((_, i) => (
+        {[...Array(8)].map((_, i) => (
           <div
             key={i}
-            className="absolute w-2 h-2 rounded-full bg-secondary/30 animate-particle"
+            className="absolute w-2 h-2 rounded-full animate-particle"
             style={{
-              left: `${15 + i * 15}%`,
-              top: `${20 + (i % 3) * 25}%`,
-              animationDelay: `${i * 1.5}s`,
+              left: `${10 + i * 12}%`,
+              top: `${15 + (i % 4) * 20}%`,
+              animationDelay: `${i * 1.2}s`,
+              background: i % 2 === 0 ? 'hsl(24 100% 50% / 0.3)' : 'hsl(217 91% 60% / 0.3)',
             }}
             aria-hidden="true"
           />
@@ -50,10 +45,10 @@ export function HeroSection() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="max-w-4xl">
             <AnimatedSection delay={0} direction="down">
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-secondary/20 text-secondary mb-8 hover-glow">
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-orange-500/20 border border-orange-500/30 text-orange-400 mb-8 hover-glow">
                 <span className="relative flex h-2 w-2" aria-hidden="true">
-                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span>
-                  <span className="relative inline-flex rounded-full h-2 w-2 bg-secondary"></span>
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-orange-400 opacity-75"></span>
+                  <span className="relative inline-flex rounded-full h-2 w-2 bg-orange-400"></span>
                 </span>
                 <span className="text-sm font-medium" itemProp="availability">Available 24/7 Worldwide</span>
               </div>
@@ -68,21 +63,21 @@ export function HeroSection() {
                     "WORLD-CLASS CUSTOMER SUPPORT SERVICES", 
                     "ENTERPRISE-GRADE BPO SOLUTIONS"
                   ]}
-                  className="text-4xl md:text-5xl lg:text-6xl font-black tracking-tight uppercase relative z-10 text-secondary"
+                  className="text-4xl md:text-5xl lg:text-6xl font-black tracking-tight uppercase relative z-10 text-white"
                   interval={3000}
                 />
               </div>
             </AnimatedSection>
 
             <AnimatedSection delay={0.2}>
-              <p className="text-lg md:text-xl text-primary-foreground/80 mb-8 max-w-2xl leading-relaxed" itemProp="description">
+              <p className="text-lg md:text-xl text-gray-300 mb-8 max-w-2xl leading-relaxed" itemProp="description">
                 Comprehensive business process outsourcing solutions designed to elevate your customer operations and drive business growth through exceptional service delivery.
               </p>
             </AnimatedSection>
 
             <AnimatedSection delay={0.3}>
               <div className="mb-8">
-                <h2 className="text-xl font-bold text-secondary mb-4 uppercase tracking-wide">KEY FEATURES:</h2>
+                <h2 className="text-xl font-bold text-orange-400 mb-4 uppercase tracking-wide">KEY FEATURES:</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4" role="list" aria-label="Key service features">
                   {[
                     "Call Center & BPO Services",
@@ -92,11 +87,11 @@ export function HeroSection() {
                   ].map((feature, index) => (
                     <div
                       key={feature}
-                      className="flex items-center gap-3 text-sm text-primary-foreground/90 animate-slide-up bg-primary-foreground/10 rounded-lg p-3 backdrop-blur-sm"
+                      className="flex items-center gap-3 text-sm text-gray-200 animate-slide-up bg-white/5 backdrop-blur-sm rounded-lg p-3 border border-white/10 hover:border-orange-500/30 transition-colors"
                       style={{ animationDelay: `${0.4 + index * 0.1}s` }}
                       role="listitem"
                     >
-                      <CheckCircle2 className="h-5 w-5 text-secondary flex-shrink-0" aria-hidden="true" />
+                      <CheckCircle2 className="h-5 w-5 text-orange-400 flex-shrink-0" aria-hidden="true" />
                       <span className="font-semibold">{feature}</span>
                     </div>
                   ))}
@@ -124,7 +119,7 @@ export function HeroSection() {
                     asChild
                     size="lg"
                     variant="outline"
-                    className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 bg-transparent btn-ripple"
+                    className="border-white/30 text-white hover:bg-white/10 bg-transparent btn-ripple"
                     aria-label="Explore our BPO and customer support services"
                   >
                     <Link href="/services">Explore Services</Link>
@@ -148,15 +143,15 @@ export function HeroSection() {
               <div className="absolute inset-0 bg-gradient-to-t from-primary/50 to-transparent" />
             </div>
             {/* Floating stats card */}
-            <div className="absolute -bottom-6 -left-6 bg-background rounded-xl p-6 shadow-lg border border-border" itemScope itemType="https://schema.org/Rating">
-              <div className="text-3xl font-bold text-primary" itemProp="ratingValue">99.8%</div>
-              <div className="text-sm text-muted-foreground" itemProp="name">Customer Satisfaction</div>
+            <div className="absolute -bottom-6 -left-6 bg-white rounded-xl p-6 shadow-2xl border border-gray-200" itemScope itemType="https://schema.org/Rating">
+              <div className="text-3xl font-bold text-orange-500" itemProp="ratingValue">99.8%</div>
+              <div className="text-sm text-gray-600" itemProp="name">Customer Satisfaction</div>
             </div>
           </div>
         </div>
       </div>
 
-      <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-secondary/50 to-transparent animate-shimmer" aria-hidden="true" />
+      <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-orange-500/50 to-transparent animate-shimmer" aria-hidden="true" />
     </section>
   )
 }
