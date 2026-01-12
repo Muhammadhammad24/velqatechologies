@@ -15,9 +15,14 @@ const features = [
       "Multi-tier technical support from basic troubleshooting to advanced technical issues, ensuring efficient resolution at the appropriate level.",
   },
   {
-    title: "Integrated Tool Stack",
+    title: "Tools & Platforms",
     description:
-      "Integrated CX tools including ticketing systems, remote support platforms, and internal dashboards for real-time issue resolution and analytics.",
+      "CRM systems for interaction tracking, ticketing platforms for escalation, call monitoring & analytics tools, and secure data handling systems integrated for seamless operations.",
+  },
+  {
+    title: "How It Is Delivered",
+    description:
+      "Call received & authenticated → Intelligent call routing → Issue categorization → First-call resolution or escalation → Follow-up & documentation for complete service lifecycle.",
   },
   {
     title: "Remote Assistance",
@@ -30,9 +35,9 @@ const features = [
       "Comprehensive knowledge base creation and maintenance to enable self-service and consistent agent responses.",
   },
   {
-    title: "Real-time Analytics",
+    title: "KPIs & Metrics",
     description:
-      "Real-time dashboards provide visibility into ticket volumes, resolution times, and performance metrics for continuous optimization.",
+      "First Contact Resolution (FCR), Average Handle Time (AHT), Customer Satisfaction (CSAT), and SLA compliance tracked continuously for performance optimization.",
   },
   {
     title: "Escalation Protocols",

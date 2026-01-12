@@ -15,24 +15,28 @@ const features = [
   },
   {
     title: "CRM Operations",
-    description: "Maintain clean, updated customer records, manage data hygiene, and ensure CRM system accuracy.",
+    description: "Maintain clean, updated customer records, manage data hygiene, and ensure CRM system accuracy with integrated tool stack.",
   },
   {
     title: "Document Processing",
-    description: "Digitization, organization, indexing, and management of business documents and records.",
+    description: "Digitization, organization, indexing, and management of business documents and records with secure handling protocols.",
   },
   {
-    title: "Administrative Support",
-    description: "Virtual assistant services including scheduling, correspondence, research, and general admin tasks.",
+    title: "Tools & Platforms",
+    description: "CRM systems for data tracking, document management platforms, analytics tools, and secure data handling systems for streamlined operations.",
+  },
+  {
+    title: "Compliance & Security",
+    description: "GDPR-aligned processes, documented procedures, and controlled access environments ensure data privacy and regulatory compliance.",
   },
   {
     title: "Reporting & Analytics",
-    description: "Regular business reports, data analysis, and dashboard creation to support decision-making.",
+    description: "Regular business reports, data analysis, and dashboard creation to support decision-making with measurable KPIs.",
   },
   {
     title: "Quality Assurance",
     description:
-      "Regular quality audits on data processing ensure accuracy, consistency, and adherence to guidelines.",
+      "Dedicated QA teams conduct regular quality audits on data processing to ensure accuracy, consistency, and adherence to guidelines.",
   },
 ]
 

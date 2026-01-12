@@ -45,8 +45,7 @@ export function CompanyInfo() {
                 Built on enterprise-grade quality frameworks, compliance-ready operations, and advanced CX tool stacks, we deliver performance-driven results that transform customer experience operations.
               </p>
               <p>
-                Under our DBA &ldquo;Velqa Publishers,&rdquo; we also operate a digital publishing division that creates and
-                monetizes digital content, showcasing our diversified business approach.
+                Under our DBA &ldquo;Velqa Publishers,&rdquo; we operate a comprehensive book publishing division that transforms manuscripts into professional literary works. We support authors through the entire lifecycle of their book, providing expert editing, custom design, and high-quality printing in paperback, hardcover, and yearbook formats. By managing global distribution, print-on-demand services, and eBook conversions, we bridge the gap between creative writing and the marketplace. Our team leverages operational expertise to provide essential growth tools, including metadata optimization and translation services, ensuring every story reaches a worldwide audience.
               </p>
             </div>
 

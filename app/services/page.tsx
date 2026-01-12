@@ -127,7 +127,7 @@ export default function ServicesPage() {
           availableChannel: {
             '@type': 'ServiceChannel',
             availableLanguage: 'English',
-            servicePhone: '+1-555-123-4567',
+            servicePhone: '+1-914-639-0318',
             serviceUrl: 'https://velqatechnologies.com/contact'
           }
         }

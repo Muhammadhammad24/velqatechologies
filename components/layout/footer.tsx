@@ -143,19 +143,6 @@ export function Footer() {
                 </div>
               </div>
 
-              {/* Thailand Office */}
-              <div className="space-y-2">
-                <span className="text-xs font-semibold uppercase tracking-wider text-secondary">THAILAND OPERATIONS</span>
-                <div className="flex items-start gap-2 text-sm text-primary-foreground/70">
-                  <MapPin className="h-4 w-4 mt-0.5 shrink-0" />
-                  <span>
-                    Sukhumvit Business Center, Floor 15<br />
-                    142 Sukhumvit Road, Khlong Toei<br />
-                    Bangkok 10110, Thailand
-                  </span>
-                </div>
-              </div>
-
               {/* Vietnam Office */}
               <div className="space-y-2">
                 <span className="text-xs font-semibold uppercase tracking-wider text-secondary">VIETNAM OPERATIONS</span>
@@ -171,7 +158,7 @@ export function Footer() {
               <div className="pt-2 space-y-2">
                 <div className="flex items-center gap-2 text-sm text-primary-foreground/70">
                   <Phone className="h-4 w-4 shrink-0" />
-                  <span>+1 (555) 123-4567</span>
+                  <span>+1 (914) 639-0318</span>
                 </div>
                 <div className="flex items-center gap-2 text-sm text-primary-foreground/70">
                   <Mail className="h-4 w-4 shrink-0" />

@@ -12,8 +12,8 @@ export function ContactInfo() {
             </div>
             <div>
               <p className="text-sm text-muted-foreground">Phone</p>
-              <a href="tel:+15551234567" className="font-medium text-foreground hover:text-primary">
-                +1 (555) 123-4567
+              <a href="tel:+19146390318" className="font-medium text-foreground hover:text-primary">
+                +1 (914) 639-0318
               </a>
             </div>
           </div>
@@ -74,23 +74,6 @@ export function ContactInfo() {
         </div>
       </div>
 
-      {/* Thailand Office */}
-      <div className="p-6 rounded-xl bg-muted/50 border border-border">
-        <div className="flex items-center gap-2 mb-4">
-          <Globe className="h-4 w-4 text-secondary" />
-          <span className="text-sm font-semibold text-secondary uppercase tracking-wider">THAILAND OPERATIONS</span>
-        </div>
-        <div className="flex items-start gap-3">
-          <MapPin className="h-5 w-5 text-muted-foreground mt-0.5 shrink-0" />
-          <div>
-            <p className="text-foreground">Sukhumvit Business Center, Floor 15</p>
-            <p className="text-foreground">142 Sukhumvit Road, Khlong Toei</p>
-            <p className="text-foreground">Bangkok 10110</p>
-            <p className="text-muted-foreground text-sm mt-1">Thailand</p>
-          </div>
-        </div>
-      </div>
-
       {/* Vietnam Office */}
       <div className="p-6 rounded-xl bg-muted/50 border border-border">
         <div className="flex items-center gap-2 mb-4">
@@ -114,7 +97,7 @@ export function ContactInfo() {
           Our support team is available 24/7 to help with urgent inquiries.
         </p>
         <a
-          href="tel:+15551234567"
+          href="tel:+19146390318"
           className="inline-flex items-center gap-2 text-sm font-medium text-secondary hover:underline"
         >
           <Phone className="h-4 w-4" />

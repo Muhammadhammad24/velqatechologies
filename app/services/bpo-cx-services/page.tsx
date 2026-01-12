@@ -43,8 +43,8 @@ const services = [
     icon: Settings,
     title: "Technical & Help Desk Support",
     description:
-      "Process-led service delivery with integrated CX tools including ticketing systems, remote support platforms, and real-time dashboards for issue resolution and analytics.",
-    features: ["Tiered Support", "Tool Integration", "Remote Assistance", "Real-time Analytics", "Knowledge Base"],
+      "Process-led service delivery with CRM systems for interaction tracking, ticketing platforms for escalation, call monitoring tools, and secure data handling systems. Intelligent call routing ensures first-call resolution with comprehensive KPI tracking (FCR, AHT, CSAT, SLA compliance).",
+    features: ["Tools & Platforms", "Smart Call Routing", "KPIs & Metrics", "Real-time Analytics", "Knowledge Base"],
     href: "/services/technical-support",
     image: "/professional-man-at-computer-technical-support-spe.jpg",
   },
@@ -52,11 +52,11 @@ const services = [
     icon: MessagesSquare,
     title: "Multi-Channel CX Operations",
     description:
-      "Unified CX platforms enable seamless customer interactions across voice, email, chat, and messaging channels, supported by real-time reporting and performance tracking.",
+      "Unified CX platforms enable seamless customer interactions across voice, email, chat, and messaging channels. Integrated CRM systems, ticketing platforms, and analytics tools track FCR, AHT, CSAT, and SLA compliance across all channels for measurable outcomes.",
     features: [
       "Omnichannel Support",
-      "Unified Platform",
-      "Real-time Reporting",
+      "Tools & Platforms",
+      "KPIs & Metrics",
       "Performance Tracking",
       "Channel Analytics",
     ],
@@ -67,8 +67,8 @@ const services = [
     icon: BarChart3,
     title: "CX Quality & Monitoring",
     description:
-      "Quality-monitored customer interactions through dedicated QA teams, call audits, scorecards, and continuous performance reviews to ensure service consistency and CX improvement.",
-    features: ["QA Frameworks", "Performance KPIs", "Continuous Monitoring", "CSAT Tracking", "SLA Adherence"],
+      "Dedicated QA frameworks with compliance-first operations under GDPR-aligned processes. Industry-trained agents with vertical expertise deliver measurable outcomes through clearly defined KPIs. Integrated CX tool stack supports analytics, reporting, and continuous improvement cycles.",
+    features: ["QA Frameworks", "Compliance & Security", "Tool Stack", "Vertical Expertise", "Measurable Outcomes"],
     href: "/services/cx-quality",
     image: "/diverse-business-team-meeting-in-modern-conference.jpg",
   },
@@ -85,8 +85,8 @@ const services = [
     icon: FileText,
     title: "Back-Office Operations",
     description:
-      "Process-led back-office operations including data management, CRM administration, and document processing to streamline business operations.",
-    features: ["Data Management", "CRM Operations", "Document Processing", "Quality Assurance", "Reporting Analytics"],
+      "Process-led back-office operations with CRM systems, document management platforms, and analytics tools. GDPR-aligned processes with documented procedures and controlled access environments ensure compliance and security. Dedicated QA teams monitor data accuracy and quality.",
+    features: ["Data Management", "Tools & Platforms", "Compliance & Security", "Quality Assurance", "Reporting Analytics"],
     href: "/services/back-office-operations",
     image: "/diverse-team-of-professionals-in-modern-office-cel.jpg",
   },

@@ -4,7 +4,7 @@ const locations = [
   {
     country: "United States",
     role: "Headquarters",
-    address: "123 Business Avenue, Suite 100\nNew York, NY 10001",
+    address: "1463 Coffeen Avenue STE 1200\nSheridan, Wyoming 82801\nUnited States",
     features: ["Executive Leadership", "Enterprise Sales", "Strategic Partnerships"],
     image: "/new-york-city-skyline-modern-business-district-sun.jpg",
   },
@@ -14,13 +14,6 @@ const locations = [
     address: "Business District, Tower A\nKarachi, Pakistan",
     features: ["24/7 Operations", "Technical Support", "Customer Service"],
     image: "/lahore-pakistan-modern-business-district-skyline.jpg",
-  },
-  {
-    country: "Thailand",
-    role: "Regional Hub",
-    address: "Sukhumvit Business Center, Floor 15\n142 Sukhumvit Road, Khlong Toei\nBangkok 10110, Thailand",
-    features: ["APAC Operations", "Regional Support", "Business Development"],
-    image: "/placeholder.svg",
   },
   {
     country: "Vietnam",

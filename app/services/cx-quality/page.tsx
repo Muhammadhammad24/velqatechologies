@@ -20,24 +20,29 @@ const features = [
       "Comprehensive scorecards evaluate agent performance across multiple dimensions including accuracy, professionalism, compliance, and customer satisfaction.",
   },
   {
-    title: "Call Audits",
+    title: "Compliance & Security",
     description:
-      "Regular call audits identify coaching opportunities, ensure policy adherence, and maintain quality standards across all customer interactions.",
+      "Velqa follows data privacy best practices and operates under GDPR-aligned processes to ensure customer information security and regulatory compliance with controlled access environments.",
+  },
+  {
+    title: "Compliance Readiness",
+    description:
+      "Compliance-first operations with documented procedures, controlled access environments, and regular audits to maintain regulatory adherence.",
+  },
+  {
+    title: "Tool Stack Integration",
+    description:
+      "Integrated CX tools that support analytics, reporting, and performance optimization with real-time dashboards and comprehensive tracking systems.",
+  },
+  {
+    title: "Vertical Expertise",
+    description:
+      "Industry-trained agents who understand customer expectations and regulatory needs specific to your business vertical.",
   },
   {
     title: "Measurable Outcomes",
     description:
-      "CX performance is measured using clearly defined KPIs including CSAT, FCR, AHT, and SLA adherence, enabling continuous optimization.",
-  },
-  {
-    title: "Continuous Improvement",
-    description:
-      "Data-driven insights from quality monitoring drive continuous improvement initiatives, agent coaching, and process optimization.",
-  },
-  {
-    title: "Compliance Monitoring",
-    description:
-      "Ongoing compliance monitoring ensures adherence to regulatory requirements, data protection standards, and industry-specific guidelines.",
+      "Our CX operations are measured through clearly defined KPIs including CSAT, FCR, AHT, and SLA compliance, enabling continuous improvement cycles.",
   },
 ]
 

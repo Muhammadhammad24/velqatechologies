@@ -119,7 +119,7 @@ export function IndustryPageTemplate({
                   variant="outline"
                   className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 bg-transparent font-bold uppercase"
                 >
-                  <Link href="tel:+15551234567">
+                  <Link href="tel:+19146390318">
                     <Phone className="mr-2 h-4 w-4" />
                     TALK TO SALES
                   </Link>

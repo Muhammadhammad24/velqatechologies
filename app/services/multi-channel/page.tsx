@@ -20,6 +20,11 @@ const features = [
       "Unified CX platforms enable consistent service delivery across all channels, ensuring customers receive the same quality experience regardless of contact method.",
   },
   {
+    title: "Tools & Platforms",
+    description:
+      "CRM systems for interaction tracking, ticketing platforms for escalation, call monitoring & analytics tools, and secure data handling systems for comprehensive multi-channel operations.",
+  },
+  {
     title: "Real-time Reporting",
     description:
       "Real-time reporting and performance tracking provide visibility into channel performance, agent productivity, and customer satisfaction metrics.",
@@ -30,9 +35,9 @@ const features = [
       "Comprehensive analytics on channel usage, customer preferences, response times, and satisfaction scores for data-driven optimization.",
   },
   {
-    title: "Proactive Engagement",
+    title: "KPIs & Metrics",
     description:
-      "Strategic engagement triggers initiate conversations based on customer behavior, increasing conversions and reducing abandonment.",
+      "First Contact Resolution (FCR), Average Handle Time (AHT), Customer Satisfaction (CSAT), and SLA compliance tracked across all channels for measurable outcomes.",
   },
   {
     title: "Chatbot Integration",

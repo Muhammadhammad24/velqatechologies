@@ -14,47 +14,47 @@ export const metadata: Metadata = {
 
 const services = [
   {
-    icon: PenTool,
-    title: "Content Creation",
-    description:
-      "Professional content development across multiple formats including articles, guides, ebooks, and multimedia content.",
-  },
-  {
     icon: BookOpen,
-    title: "Digital Publishing",
-    description: "End-to-end digital publishing services from concept to distribution across major platforms.",
+    title: "Professional Editing",
+    description:
+      "Refining your voice through expert line editing, copy editing, and meticulous proofreading.",
   },
   {
-    icon: TrendingUp,
-    title: "Monetization Strategies",
-    description: "Revenue optimization through advertising, subscriptions, affiliate marketing, and sponsored content.",
+    icon: PenTool,
+    title: "Custom Book Design",
+    description: "Creating eye-catching book covers and professional interior formatting for both print and digital versions.",
   },
   {
     icon: Globe,
-    title: "Platform Management",
-    description: "Manage digital presence across websites, blogs, social media, and content platforms.",
+    title: "Printing & Production",
+    description: "High-quality paperback, hardcover, and specialized printing options, including yearbooks.",
+  },
+  {
+    icon: TrendingUp,
+    title: "Global Distribution",
+    description: "Seamlessly listing your work on Amazon, Bookshop, and Print-on-Demand networks.",
+  },
+  {
+    icon: BookOpen,
+    title: "Digital Conversion",
+    description: "Transforming your manuscript into high-standard eBooks with fixed layouts and multi-platform compatibility.",
   },
   {
     icon: Users,
-    title: "Audience Development",
-    description: "Build and engage audiences through strategic content marketing and community management.",
-  },
-  {
-    icon: DollarSign,
-    title: "Revenue Optimization",
-    description: "Maximize content ROI through analytics-driven optimization and diversified revenue streams.",
+    title: "Author Marketing",
+    description: "Boosting visibility through metadata optimization, ads, and physical promotional materials like bookmarks and posters.",
   },
 ]
 
 const capabilities = [
-  "SEO-optimized content creation",
-  "Multi-platform publishing",
-  "Audience analytics and insights",
-  "Revenue stream diversification",
-  "Content calendar management",
-  "Brand partnership facilitation",
-  "Social media content strategy",
-  "Email newsletter management",
+  "Self-Publishing Guidance",
+  "Global E-Books Distribution",
+  "Line & Copy Editing",
+  "Hardcover & Paperback Printing",
+  "eBook Conversion & Layout",
+  "Audiobook Production",
+  "Metadata & SEO for Authors",
+  "Translation Services",
 ]
 
 export default function VelqaPublishersPage() {
@@ -81,9 +81,11 @@ export default function VelqaPublishersPage() {
               <h1 className="text-4xl md:text-5xl font-bold mb-6 text-balance uppercase tracking-wide">
                 <span className="text-secondary">VELQA</span> PUBLISHERS
               </h1>
+              <p className="text-lg text-primary-foreground/80 leading-relaxed mb-2">
+                <span className="font-semibold text-secondary">Empowering Authors from Manuscript to Marketplace</span>
+              </p>
               <p className="text-lg text-primary-foreground/80 leading-relaxed mb-8">
-                Our digital publishing division creates, manages, and monetizes high-quality digital content. From
-                content creation to audience development, we help build sustainable digital media businesses.
+                Velqa Publishers is a full-service publishing division dedicated to bringing your stories to life. We provide end-to-end support for independent authors, offering professional editing, custom design, high-quality printing, and global distribution strategies.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button asChild size="lg" className="bg-secondary text-secondary-foreground hover:bg-secondary/90 font-bold uppercase">
@@ -112,27 +114,105 @@ export default function VelqaPublishersPage() {
               <div>
                 <span className="text-sm font-semibold text-secondary uppercase tracking-wider">About</span>
                 <h2 className="text-3xl md:text-4xl font-bold text-foreground mt-4 mb-6">
-                  Digital Publishing Excellence
+                  Your Partner in Professional Publishing
                 </h2>
                 <div className="space-y-4 text-muted-foreground leading-relaxed">
                   <p>
-                    Velqa Publishers operates as a DBA (Doing Business As) under Velqa Technologies LLC, representing
-                    our expansion into the digital content and publishing space.
+                    Velqa Publishers operates as a specialized division under Velqa Technologies LLC, bridging the gap between creative writing and professional production. Our mission is to provide independent authors with the same high-quality resources available to traditional publishing houses.
                   </p>
                   <p>
-                    Leveraging our operational expertise and global team, Velqa Publishers creates and monetizes digital
-                    content across multiple platforms and formats. Our approach combines quality content creation with
-                    data-driven monetization strategies.
-                  </p>
-                  <p>
-                    Whether {"you're"} looking to establish a digital content presence, optimize existing properties, or
-                    explore content partnerships, Velqa Publishers brings the resources and expertise to succeed.
+                    By combining traditional craftsmanship in book printing with modern digital distribution, we ensure your work reaches readers in every format—whether they prefer a hardcover book, an eBook, or an audiobook.
                   </p>
                 </div>
               </div>
-              <div className="relative">
-                <div className="rounded-2xl overflow-hidden shadow-xl">
-                  <img src="/young-professional-team-meeting-collaboration-dive.jpg" alt="Velqa Publishers content creation team" className="w-full h-auto" />
+              
+              {/* Stats and Trust Indicators */}
+              <div className="space-y-8">
+                {/* Stats Section */}
+                <div className="bg-gradient-to-br from-muted/50 to-muted/30 rounded-2xl p-8 border border-border/50">
+                  <h3 className="text-2xl font-bold text-center text-foreground mb-8">Velqa Publishers at a Glance</h3>
+                  <div className="grid grid-cols-3 gap-6">
+                    <div className="text-center">
+                      <div className="w-24 h-24 mx-auto rounded-full border-4 border-primary/30 flex items-center justify-center mb-3">
+                        <div>
+                          <div className="text-2xl font-bold text-primary">50K+</div>
+                        </div>
+                      </div>
+                      <p className="text-sm text-muted-foreground">Independent authors published</p>
+                    </div>
+                    <div className="text-center">
+                      <div className="w-24 h-24 mx-auto rounded-full border-4 border-secondary/30 flex items-center justify-center mb-3">
+                        <div>
+                          <div className="text-2xl font-bold text-secondary">5000+</div>
+                        </div>
+                      </div>
+                      <p className="text-sm text-muted-foreground">Five-star Trustpilot reviews</p>
+                    </div>
+                    <div className="text-center">
+                      <div className="w-24 h-24 mx-auto rounded-full border-4 border-orange-500/30 flex items-center justify-center mb-3">
+                        <div>
+                          <div className="text-2xl font-bold text-orange-500">100+</div>
+                        </div>
+                      </div>
+                      <p className="text-sm text-muted-foreground">Global retail partners</p>
+                    </div>
+                  </div>
+                  
+                  {/* Media Logos */}
+                  <div className="mt-8 pt-8 border-t border-border/50">
+                    <p className="text-center text-sm text-muted-foreground mb-4">As seen on</p>
+                    <div className="flex flex-wrap items-center justify-center gap-6 opacity-60">
+                      <span className="text-lg font-bold text-foreground">NBC</span>
+                      <span className="text-lg font-bold text-foreground">CBS</span>
+                      <span className="text-lg font-bold text-foreground">The New York Times</span>
+                      <span className="text-lg font-bold text-foreground">Newsweek</span>
+                    </div>
+                  </div>
+                </div>
+                
+                {/* Published Books Showcase */}
+                <div className="rounded-2xl overflow-hidden shadow-xl border border-border/50">
+                  <div className="bg-gradient-to-r from-primary/10 to-secondary/10 p-6">
+                    <h4 className="text-center font-semibold text-foreground mb-4">Published Works Showcase</h4>
+                    <div className="grid grid-cols-4 gap-4">
+                      {/* Book 1 */}
+                      <div className="aspect-[2/3] rounded-lg shadow-lg overflow-hidden hover:scale-105 transition-transform duration-300">
+                        <img 
+                          src="/book1.webp" 
+                          alt="Published book cover 1" 
+                          className="w-full h-full object-cover"
+                        />
+                      </div>
+                      
+                      {/* Book 2 */}
+                      <div className="aspect-[2/3] rounded-lg shadow-lg overflow-hidden hover:scale-105 transition-transform duration-300">
+                        <img 
+                          src="/book2.webp" 
+                          alt="Published book cover 2" 
+                          className="w-full h-full object-cover"
+                        />
+                      </div>
+                      
+                      {/* Book 3 */}
+                      <div className="aspect-[2/3] rounded-lg shadow-lg overflow-hidden hover:scale-105 transition-transform duration-300">
+                        <img 
+                          src="/book3.webp" 
+                          alt="Published book cover 3" 
+                          className="w-full h-full object-cover"
+                        />
+                      </div>
+                      
+                      {/* Book 4 */}
+                      <div className="aspect-[2/3] rounded-lg shadow-lg overflow-hidden hover:scale-105 transition-transform duration-300">
+                        <img 
+                          src="/book4.webp" 
+                          alt="Published book cover 4" 
+                          className="w-full h-full object-cover"
+                        />
+                      </div>
+                    </div>
+                    <p className="text-center text-sm text-muted-foreground mt-4">Diverse genres from independent authors worldwide</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -146,22 +226,20 @@ export default function VelqaPublishersPage() {
               <span className="text-sm font-semibold text-secondary uppercase tracking-wider">What We Do</span>
               <h2 className="text-3xl md:text-4xl font-bold text-foreground mt-4 mb-4">Publishing Services</h2>
               <p className="text-muted-foreground text-lg">
-                Comprehensive digital publishing services from content creation to monetization.
+                Comprehensive support for every stage of your author journey
               </p>
             </div>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            
+            {/* Circular Icons Grid */}
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-8 md:gap-12 max-w-5xl mx-auto mb-16">
               {services.map((service) => (
-                <Card key={service.title} className="border-border/50">
-                  <CardHeader>
-                    <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
-                      <service.icon className="h-6 w-6 text-primary" />
-                    </div>
-                    <CardTitle className="text-xl">{service.title}</CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <CardDescription className="leading-relaxed">{service.description}</CardDescription>
-                  </CardContent>
-                </Card>
+                <div key={service.title} className="flex flex-col items-center text-center group">
+                  <div className="w-32 h-32 md:w-40 md:h-40 rounded-full bg-muted flex items-center justify-center mb-4 transition-all duration-300 group-hover:bg-primary/10 group-hover:scale-105 shadow-md">
+                    <service.icon className="h-12 w-12 md:h-16 md:w-16 text-primary transition-colors group-hover:text-secondary" />
+                  </div>
+                  <h3 className="font-bold text-foreground mb-2">{service.title}</h3>
+                  <p className="text-sm text-muted-foreground leading-relaxed">{service.description}</p>
+                </div>
               ))}
             </div>
           </div>
@@ -174,12 +252,12 @@ export default function VelqaPublishersPage() {
               <div className="text-center mb-12">
                 <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Our Capabilities</h2>
                 <p className="text-muted-foreground text-lg">
-                  Full-service digital publishing expertise across the content lifecycle.
+                  Full-Service Expertise Across the Publishing Lifecycle
                 </p>
               </div>
               <div className="grid sm:grid-cols-2 gap-4">
                 {capabilities.map((capability) => (
-                  <div key={capability} className="flex items-center gap-3 p-4 rounded-lg bg-muted/50">
+                  <div key={capability} className="flex items-center gap-3 p-4 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
                     <CheckCircle2 className="h-5 w-5 text-secondary shrink-0" />
                     <span className="text-foreground">{capability}</span>
                   </div>

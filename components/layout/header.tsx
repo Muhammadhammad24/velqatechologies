@@ -57,7 +57,7 @@ export function Header() {
           <div className="flex items-center gap-6">
             <span className="flex items-center gap-2 hover:text-secondary transition-colors cursor-pointer">
               <Phone className="h-3 w-3" />
-              +1 (555) 123-4567
+              +1 (914) 639-0318
             </span>
             <span className="flex items-center gap-2 hover:text-secondary transition-colors cursor-pointer">
               <Mail className="h-3 w-3" />
@@ -65,7 +65,7 @@ export function Header() {
             </span>
           </div>
           <div className="flex items-center gap-2">
-            <span className="text-xs opacity-80">📍 142 Sukhumvit Road, Khlong Toei, Bangkok 10110, Thailand</span>
+            <span className="text-xs opacity-80">📍 1463 Coffeen Avenue STE 1200, Sheridan, Wyoming 82801, USA</span>
             <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-secondary text-secondary-foreground text-xs font-medium animate-pulse-glow">
               24/7 Support Available
             </span>

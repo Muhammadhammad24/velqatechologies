@@ -143,7 +143,7 @@ export default function RootLayout({
     contactPoint: [
       {
         '@type': 'ContactPoint',
-        telephone: '+1-555-123-4567',
+        telephone: '+1-914-639-0318',
         email: 'info@velqatechnologies.com',
         contactType: 'customer service',
         availableLanguage: ['English'],

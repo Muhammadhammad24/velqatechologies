@@ -149,7 +149,7 @@ export function CTASection() {
                   className="border-2 border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary font-bold text-lg px-8 py-4 rounded-full bg-transparent transition-all duration-300 transform hover:scale-105"
                   style={{ boxShadow: '0 5px 20px rgba(0,0,0,0.2)' }}
                 >
-                  <Link href="tel:+15551234567">
+                  <Link href="tel:+19146390318">
                     <Phone className="mr-3 h-5 w-5" />
                     CALL US NOW
                   </Link>
