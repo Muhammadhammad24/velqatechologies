@@ -58,10 +58,38 @@ const capabilities = [
 ]
 
 export default function VelqaPublishersPage() {
+  // Velqa Publishers official website
+  const velqaPublishersWebsite = "https://velqapublishers.com"
+  
   return (
     <div className="min-h-screen flex flex-col">
       <Header />
       <main className="flex-1">
+        {/* Redirect Banner - Prominent CTA */}
+        <div className="bg-gradient-to-r from-secondary via-orange-500 to-secondary py-4 sticky top-0 z-40 shadow-lg animate-pulse-glow">
+          <div className="container mx-auto px-4">
+            <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
+              <div className="flex items-center gap-3">
+                <BookOpen className="h-6 w-6 text-secondary-foreground animate-bounce" />
+                <div className="text-center sm:text-left">
+                  <p className="text-secondary-foreground font-bold text-lg">Visit Our Official Publishing Portal</p>
+                  <p className="text-secondary-foreground/90 text-sm">Explore our full catalog and author services</p>
+                </div>
+              </div>
+              <Button
+                asChild
+                size="lg"
+                className="bg-primary text-primary-foreground hover:bg-primary/90 font-bold uppercase shadow-xl hover:scale-105 transition-transform"
+              >
+                <a href={velqaPublishersWebsite} target="_blank" rel="noopener noreferrer">
+                  GO TO VELQA PUBLISHERS
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </a>
+              </Button>
+            </div>
+          </div>
+        </div>
+
         {/* Hero */}
         <section className="relative bg-primary text-primary-foreground py-20 md:py-28 overflow-hidden">
           <div className="absolute inset-0">
@@ -162,10 +190,10 @@ export default function VelqaPublishersPage() {
                   <div className="mt-8 pt-8 border-t border-border/50">
                     <p className="text-center text-sm text-muted-foreground mb-4">As seen on</p>
                     <div className="flex flex-wrap items-center justify-center gap-6 opacity-60">
-                      <span className="text-lg font-bold text-foreground">NBC</span>
-                      <span className="text-lg font-bold text-foreground">CBS</span>
-                      <span className="text-lg font-bold text-foreground">The New York Times</span>
-                      <span className="text-lg font-bold text-foreground">Newsweek</span>
+                      <span className="text-lg font-bold text-foreground px-3 py-1 border-r border-border/50">NBC</span>
+                      <span className="text-lg font-bold text-foreground px-3 py-1 border-r border-border/50">CBS</span>
+                      <span className="text-lg font-bold text-foreground px-3 py-1 border-r border-border/50">The New York Times</span>
+                      <span className="text-lg font-bold text-foreground px-3 py-1">Newsweek</span>
                     </div>
                   </div>
                 </div>
@@ -271,26 +299,41 @@ export default function VelqaPublishersPage() {
         <section className="py-20 bg-primary text-primary-foreground">
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto text-center">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-balance">Interested in Content Partnerships?</h2>
+              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-balance">Ready to Publish Your Book?</h2>
               <p className="text-primary-foreground/80 text-lg mb-8">
-                Whether {"you're"} looking for content creation services, want to monetize your existing properties, or
-                explore acquisition opportunities, {"we'd"} love to hear from you.
+                Visit our official Velqa Publishers website to explore our complete catalog, submit your manuscript, and discover how we can help bring your story to life.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button asChild size="lg" className="bg-secondary text-secondary-foreground hover:bg-secondary/90">
-                  <Link href="/contact">
-                    Start a Conversation
-                    <ArrowRight className="ml-2 h-4 w-4" />
-                  </Link>
-                </Button>
-                <Button
-                  asChild
-                  size="lg"
-                  variant="outline"
-                  className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 bg-transparent"
+                <Button 
+                  asChild 
+                  size="lg" 
+                  className="bg-secondary text-secondary-foreground hover:bg-secondary/90 font-bold text-lg px-8 py-6 shadow-2xl hover:scale-105 transition-transform"
                 >
-                  <Link href="/about">About Velqa Technologies</Link>
+                  <a href={velqaPublishersWebsite} target="_blank" rel="noopener noreferrer">
+                    <BookOpen className="mr-2 h-5 w-5" />
+                    VISIT VELQA PUBLISHERS WEBSITE
+                    <ArrowRight className="ml-2 h-5 w-5" />
+                  </a>
                 </Button>
+              </div>
+              <div className="mt-8 pt-8 border-t border-primary-foreground/20">
+                <p className="text-primary-foreground/60 text-sm mb-4">Or contact us for partnership opportunities</p>
+                <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                  <Button asChild size="lg" variant="outline" className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 bg-transparent">
+                    <Link href="/contact">
+                      Start a Conversation
+                      <ArrowRight className="ml-2 h-4 w-4" />
+                    </Link>
+                  </Button>
+                  <Button
+                    asChild
+                    size="lg"
+                    variant="outline"
+                    className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 bg-transparent"
+                  >
+                    <Link href="/about">About Velqa Technologies</Link>
+                  </Button>
+                </div>
               </div>
             </div>
           </div>
