@@ -60,8 +60,8 @@ npm start
 
 ## 🌐 Live Website
 
-Production: https://velqatechologies.vercel.app
-Custom Domain: https://velqatechologies.com (configure in Vercel dashboard)
+Production: https://velqatechnologies.vercel.app
+Custom Domain: https://velqatechnologies.com (configure in Vercel dashboard)
 
 ---
 
